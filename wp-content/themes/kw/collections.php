@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div class="welcome-tiles">
+<div class="tiles js-tiles">
     <?php
         $kollektions = get_terms( array(
             'taxonomy'   => 'kollektion',
@@ -16,44 +16,32 @@
         // Alle Kollektionen durchlaufen
         foreach( $kollektions as $kollektion ) { ?>
             <?php
-                $posts[$kollektion->name] = get_posts(array( 'posts_per_page' => -1, 'post_type' => 'produkte', 'tax_query' => array(
-                    array (
-                        'taxonomy' => 'kollektion',
-                        'field' => 'slug',
-                        'terms' => $kollektion->name,
-                    )
-                ) ));
-
-                $variable = get_field('product_images_desktop', $posts[$kollektion->name][0]->ID);
-
-                echo '<pre>';
-                //var_dump($posts[$kollektion->name]);
-                var_dump($posts[$kollektion->name][0]->ID);
-                var_dump($variable[0]['sizes']['large']);
-                echo '<pre>';
+                $collectionName = $kollektion->name;
+                $collectionYear = get_field('collection_year', $kollektion);
+                $collectionImageDesktop = get_field('collection_image_desktop', $kollektion);
+                $collectionImageTablet = get_field('collection_image_tablet', $kollektion);
+                $collectionImageMobile = get_field('collection_image_mobile', $kollektion);
             ?>
 
-            <a href="<?php echo get_term_link( $kollektion ); ?>" class="item effect-oscar">
-                <picture>
-                    <!--<source media="(min-width: 1024px)" srcset="http://kw.local/wp-content/uploads/2020/03/Startseite-Links-scaled.jpg">
-                    <source media="(min-width: 768px)" srcset="http://kw.local/wp-content/uploads/2020/04/Startseite-Links-1-scaled-e1587387216114.jpg">
-                    <source media="(min-width: 320px)" srcset="http://kw.local/wp-content/uploads/2020/04/Startseite-Links-scaled-e1587049947145.jpg">-->
-                    <img src="<?php echo $variable[0]['sizes']['large'] ?>">
-                </picture>
+            <div class="item-wrap">
+                <a href="<?php echo get_term_link( $kollektion ); ?>" class="item effect-oscar">
+                    <picture>
+                        <source media="(min-width: 1024px)" srcset="<?php echo $collectionImageDesktop; ?>">
+                        <source media="(min-width: 768px)" srcset="<?php echo $collectionImageTablet; ?>">
+                        <source media="(min-width: 320px)" srcset="<?php echo $collectionImageMobile; ?>">
+                        <img src="<?php echo $collectionImageDesktop; ?>">
+                    </picture>
 
-                <figcaption>
-                    <p><?php echo $kollektion->name ?></p>
-                </figcaption>
-            </a>
+                    <figcaption>
+                        <p><?php echo $collectionName; ?></p>
+                    </figcaption>
+                </a>
+            </div>
+
         <?php } ?>
 
-    <?php wp_reset_postdata(); ?>
-
-    -------------------------------------------------------------<br><br>
-
-
-
         <?php wp_reset_postdata(); ?>
+
     </div>
 </div>
 

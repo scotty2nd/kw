@@ -1,4 +1,5 @@
-.welcome-tiles {
+.welcome-tiles,
+.tiles {
   display: flex;
   justify-content: space-between;
 
@@ -41,5 +42,25 @@
       font-family: $font-family-italic;
       margin-right: 3px;
     }
+  }
+}
+
+.tiles {
+  @include breakpoint('desktop', 'min') {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item-wrap {
+    @include breakpoint('desktop', 'min') {
+      width: 33%;
+      padding-right: $unit-spacing/2;
+      padding-left: $unit-spacing/2;
+      margin-bottom: $unit-spacing;
+    }
+  }
+
+  .item {
+    width: 100%;
   }
 }

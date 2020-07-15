@@ -620,7 +620,6 @@ ul {
   @media (max-width: 480px) {
     .header {
       margin-bottom: 2rem; } }
-  .page-template-collections .header,
   .tax-kollektion .header {
     margin-bottom: 0; }
   .header .menu-wrap {
@@ -728,35 +727,59 @@ ul {
   .change .stripe.three {
     transform: rotate(45deg) translate(-5px, -3px); } }
 
-.welcome-tiles {
+.welcome-tiles,
+.tiles {
   display: flex;
   justify-content: space-between; }
   @media (max-width: 1023px) {
-    .welcome-tiles {
+    .welcome-tiles,
+    .tiles {
       flex-direction: column; } }
-  .welcome-tiles a {
+  .welcome-tiles a,
+  .tiles a {
     text-align: center;
     font-family: "Publico-Banner-Light", sans-serif; }
-    .welcome-tiles a p {
+    .welcome-tiles a p,
+    .tiles a p {
       width: 100%; }
-  .welcome-tiles .item {
+  .welcome-tiles .item,
+  .tiles .item {
     width: 32%;
     cursor: pointer;
     display: block;
     position: relative; }
-    .welcome-tiles .item img {
+    .welcome-tiles .item img,
+    .tiles .item img {
       width: 100%;
       display: block; }
-  .welcome-tiles .slick-arrow {
+  .welcome-tiles .slick-arrow,
+  .tiles .slick-arrow {
     top: calc(50% - 25px); }
-  .welcome-tiles .slick-dots {
+  .welcome-tiles .slick-dots,
+  .tiles .slick-dots {
     margin-top: 1.5rem;
     list-style: none;
     padding: 0;
     text-align: center; }
-    .welcome-tiles .slick-dots .title {
+    .welcome-tiles .slick-dots .title,
+    .tiles .slick-dots .title {
       font-family: "Publico-Banner-Light-Italic", sans-serif;
       margin-right: 3px; }
+
+@media (min-width: 1023px) {
+  .tiles {
+    flex-wrap: wrap;
+    justify-content: center; } }
+
+@media (min-width: 1023px) {
+  .tiles .item-wrap {
+    width: 33%;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-bottom: 24px; } }
+
+.tiles .item {
+  width: 100%; }
 
 .collection-slider {
   position: static; }
