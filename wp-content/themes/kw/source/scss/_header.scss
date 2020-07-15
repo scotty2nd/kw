@@ -1,0 +1,156 @@
+.header {
+  margin-bottom: 2.5rem;
+  position: inherit;
+  z-index: 15;
+
+  @include breakpoint('mobile') {
+    margin-bottom: 2rem;
+  }
+
+  .page-template-collections &,
+  .tax-kollektion & {
+    margin-bottom: 0;
+  }
+
+  .menu-wrap {
+    position: relative;
+    text-align: center;
+  }
+
+  .flex-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .title {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: $font-family;
+    cursor: pointer;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+    &:hover {
+      font-style: italic;
+    }
+
+    @include breakpoint('mobile') {
+      font-size: 1.2rem;
+    }
+  }
+
+  .menu {
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #fff;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+    &.open {
+      max-height: 1000px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      width: 100vw;
+      left: 50%;
+      right: 50%;
+
+      -webkit-box-shadow: 0 10px 8px -6px rgba(0,0,0,0.02);
+      -moz-box-shadow: 0 10px 8px -6px rgba(0,0,0,0.02);
+      box-shadow: 0 10px 8px -6px rgba(0,0,0,0.02);
+
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -ms-transition: all .3s ease;
+      -o-transition: all .3s ease;
+      transition: all .3s ease;
+    }
+
+    .menu-item {
+      &.current-menu-item {
+        font-weight: bold;
+      }
+
+      a {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1.1rem;
+        height: 100%;
+        display: block;
+        font-family:  $font-family;
+
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+
+        &:hover {
+          font-family: $font-family-italic;
+        }
+
+      }
+    }
+  }
+}
+
+
+.burger-icon {
+  display: none;
+
+  @include breakpoint('mobile') {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+}
+
+.stripe {
+  @include breakpoint('mobile') {
+    width: 19px;
+    height: 2px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+    border-radius: 3px;
+  }
+}
+
+.change .stripe.one {
+  @include breakpoint('mobile') {
+    transform: rotate(-45deg) translate(-5px,3px);
+  }
+}
+
+.change .stripe.two {
+  @include breakpoint('mobile') {
+    opacity: 0;
+  }
+}
+
+.change .stripe.three {
+  @include breakpoint('mobile') {
+    transform: rotate(45deg) translate(-5px,-3px);
+  }
+}

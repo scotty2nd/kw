@@ -1,0 +1,92 @@
+/*------------------------------------*\
+  #FONT
+\*------------------------------------*/
+@font-face {
+  font-family: 'Publico-Banner-Light';
+  font-style: normal;
+  src:  url('../fonts/PublicoBanner-Light-Web.woff') format('woff'),
+        url('../fonts/PublicoBanner-Light-Web.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Publico-Banner-Light-Italic';
+  font-style: normal;
+  src:  url('../fonts/PublicoBanner-LightItalic-Web.woff') format('woff'),
+        url('../fonts/PublicoBanner-LightItalic-Web.woff2') format('woff2');
+}
+
+a {
+	color: $color-primary;
+    text-decoration: none;
+
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+
+    &:hover {
+      text-decoration: none;
+      font-family: $font-family-italic;
+    }
+}
+
+p {
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: $font-family;
+}
+
+h1 {
+  font-size: $font-size*3;
+  line-height: $unit-spacing--small*6;
+  color: $color-secondary;
+  margin: 0;
+
+  @include breakpoint('mobile') {
+    font-size: $unit-spacing--small*3;
+    line-height: $unit-spacing*2;
+  }
+}
+
+h2 {
+  font-size: $font-size*3;
+
+    @include breakpoint('mobile') {
+      font-size: 36px;
+    }
+}
+
+h3 {
+  margin: 0;
+}
+
+.wp-block-column {
+  .page-template-only-text & {
+    column-count: 4;
+    line-height: 18px;
+
+    @include breakpoint('mobile') {
+      column-count: unset;
+    }
+  }
+
+  h2 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 18px;
+
+    &.has-text-align-center {
+      @include breakpoint('mobile') {
+        text-align: left;
+      }
+    }
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+}

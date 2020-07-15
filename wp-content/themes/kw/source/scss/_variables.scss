@@ -1,0 +1,25 @@
+/*------------------------------------*\
+  #GLOBAL VARIABLES
+\*------------------------------------*/
+
+/* MAIN COLORS */
+
+$color-primary:                         #000000;
+$color-secondary:                       #ffffff;
+
+/* SEMANTIC COLORS */
+$page-bg-color:                         $color-primary;
+$text-color:                            $color-secondary;
+
+/* SPACING */
+$unit-spacing:                           24px;
+$unit-spacing--small:                    $unit-spacing/2;
+
+/* TYPOGRAPHIE */
+$font-size:                               16px;
+$font-family:                             'Publico-Banner-Light', sans-serif;
+$font-family-italic:                      'Publico-Banner-Light-Italic', sans-serif;
+$font-lineheight:                         1.3;
+
+
+

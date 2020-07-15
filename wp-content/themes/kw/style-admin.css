@@ -1,0 +1,32 @@
+.wp-block {
+    max-width: none;
+}
+
+#adminmenu li.wp-menu-separator {
+    height: 0;
+    margin: 0;
+}
+
+.taxonomy-kollektion .term-description-wrap,
+.taxonomy-kollektion .column-description {
+    display: none;
+}
+
+.taxonomy-kollektion #col-container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.taxonomy-kollektion #col-left,
+.taxonomy-kollektion #col-right {
+    float: none;
+    width: 100%;
+}
+
+.taxonomy-kollektion #col-right .col-wrap {
+    padding-left: 0;
+}
+
+.taxonomy-kollektion div[data-name="collection_year"] input {
+    width: 107px;
+}

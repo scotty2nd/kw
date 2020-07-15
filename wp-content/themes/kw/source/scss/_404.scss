@@ -1,0 +1,13 @@
+.error404 {
+  .content-wrap {
+    display: flex;
+    height: 65vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .error-type {
+    font-size: 8rem;
+  }
+}

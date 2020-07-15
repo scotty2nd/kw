@@ -1,0 +1,45 @@
+.welcome-tiles {
+  display: flex;
+  justify-content: space-between;
+
+  @include breakpoint('desktop') {
+    flex-direction: column;
+  }
+
+  a {
+    text-align: center;
+    font-family: $font-family;
+
+    p {
+      width: 100%;
+    }
+  }
+
+  .item {
+    width: 32%;
+    cursor: pointer;
+    display: block;
+    position: relative;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .slick-arrow {
+    top: calc(50% - 25px);
+  }
+
+  .slick-dots {
+    margin-top: 1.5rem;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+
+    .title {
+      font-family: $font-family-italic;
+      margin-right: 3px;
+    }
+  }
+}
