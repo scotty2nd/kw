@@ -47,9 +47,11 @@
                                 <?php echo the_title(); ?>
                             </span>
 
-                            <div class="product-information">
-                                <p class="img-caption"><?php echo $productImagesDesktop[0]['Caption']; ?></p>
-                            </div>
+                            <!--<div class="product-information">
+                                <p class="img-caption"><?php
+                                    echo $productImagesDesktop[0]['caption'];
+                                    ?></p>
+                            </div>-->
 
                             <div class="product-information">
                                 <a href="#gallery<?php echo $index; ?>" class="product-gallery js-product-gallery">
@@ -62,6 +64,7 @@
 
                             <div id="gallery<?php echo $index; ?>" class="js-product-information-gallery mfp-hide">
                                 <?php if( $productImagesDesktop ): ?>
+                                    <?php $count = 1; ?>
                                     <?php foreach ( $productImagesDesktop as $productDesktopImage ) : ?>
                                         <div class="slide">
                                             <picture>
@@ -70,8 +73,14 @@
                                                 <source media="(min-width: 320px)" srcset="<?php echo $productImagesMobile['sizes']['large'] ?>">
                                                 <img src="<?php echo $productDesktopImage['sizes']['large'] ?>">
                                             </picture>
-                                            <p class="img-caption"><?php echo $productImagesDesktop['Caption']; ?></p>
+                                            <p class="img-caption">
+                                                <?php echo $productDesktopImage['caption']; ?>
+                                                <span class="counter">
+                                                    <?php echo $count . '/' . count($productImagesDesktop); ?>
+                                                </span>
+                                            </p>
                                         </div>
+                                        <?php $count++; ?>
                                     <?php endforeach; ?>
                                 <?php endif; ?>
                             </div>

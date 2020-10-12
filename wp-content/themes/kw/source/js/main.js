@@ -1,6 +1,6 @@
 jQuery( document ).ready(function(){
     /**
-     * Menu
+     * Hauptmenu
      */
 
     var menuContainer = jQuery( '.js-menu' ),
@@ -20,7 +20,6 @@ jQuery( document ).ready(function(){
     });
 
     jQuery( '.js-menu-overlay' ).on('click', function (event) {
-        console.log('click on body');
         event.stopPropagation();
         menuContainer.toggleClass( 'open' );
         menuOverlayContainer.addClass( 'hide' );
@@ -69,33 +68,6 @@ jQuery( document ).ready(function(){
         ]
     });
 
-    /**
-     * Welcome Tiles
-     */
-    var tiles = jQuery( '.js-tiles' );
-
-    tiles.on('init reInit afterChange', function(event, slick, currentSlide){
-        //currentSlide is undefined on init
-        var currentSlide = (currentSlide ? currentSlide : 0) + 1,
-            currentTitle = tiles.find( '.slick-current figcaption p' ).text();
-
-        jQuery( '.slick-dots' ).html( '<li><span class="title">' + currentTitle + '</span> (' + currentSlide + '/' + slick.slideCount + ')</li>');
-    });
-
-    tiles.slick({
-        mobileFirst: true,
-        arrows: true,
-        nextArrow: '<i class="slick-arrow slick-next"></i>',
-        prevArrow: '<i class="slick-arrow slick-prev"></i>',
-        dots: true,
-        infinite: false,
-        responsive: [
-            {
-                breakpoint: 1023,
-                settings: "unslick"
-            }
-        ]
-    });
 
     /**
      * Kollektions Slider

@@ -701,7 +701,7 @@ ul {
       .header .menu .menu-item a:hover {
         font-family: "Publico-Banner-Light-Italic", sans-serif; }
 
-.menu-overlay {
+.main-menu-overlay {
   display: none !important;
   width: 100%;
   height: 100%;
@@ -709,10 +709,10 @@ ul {
   top: 0;
   left: 0; }
   @media (max-width: 768px) {
-    .menu-overlay {
+    .main-menu-overlay {
       display: block !important; } }
-  .menu-overlay.hide {
-    display: none; }
+  .main-menu-overlay.hide {
+    display: none !important; }
 
 .burger-icon {
   display: none; }
@@ -964,6 +964,8 @@ ul {
     .mfp-gallery .mfp-content.product-gallery-modal .img-caption {
       text-align: center;
       margin-top: 10px; }
+    .mfp-gallery .mfp-content.product-gallery-modal .counter {
+      display: block; }
 
 .mfp-gallery .mfp-arrow {
   background-color: transparent;
