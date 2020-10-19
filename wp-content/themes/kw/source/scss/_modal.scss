@@ -49,8 +49,16 @@
   }
 }
 
-.mfp-close {
+button.mfp-close {
   cursor: pointer;
+  text-indent: -9999px;
+  background-image: url(../img/cross.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+  color: #000;
 }
 
 /* overlay at start */

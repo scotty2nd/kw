@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fe8ca89-bbc6-41ee-bd8c-c23aa8ffad93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/kw/img/cross.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/js/main.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,9 +35,9 @@
           <entry key="css" value="5" />
           <entry key="js" value="27" />
           <entry key="json" value="2" />
-          <entry key="php" value="65" />
-          <entry key="scss" value="67" />
-          <entry key="svg" value="1" />
+          <entry key="php" value="66" />
+          <entry key="scss" value="69" />
+          <entry key="svg" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -48,21 +45,21 @@
           <entry key="CSS" value="5" />
           <entry key="JSON" value="2" />
           <entry key="JavaScript" value="27" />
-          <entry key="PHP" value="64" />
+          <entry key="PHP" value="65" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="SCSS" value="67" />
-          <entry key="SVG" value="1" />
+          <entry key="SCSS" value="69" />
+          <entry key="SVG" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="155" />
-          <entry key="js" value="1882" />
+          <entry key="js" value="1889" />
           <entry key="json" value="5" />
-          <entry key="php" value="7562" />
-          <entry key="scss" value="3616" />
+          <entry key="php" value="7708" />
+          <entry key="scss" value="3701" />
           <entry key="svg" value="6" />
-          <entry key="txt" value="95" />
+          <entry key="txt" value="160" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -70,10 +67,10 @@
           <entry key="CSS" value="155" />
           <entry key="HTML" value="4" />
           <entry key="JSON" value="5" />
-          <entry key="JavaScript" value="1882" />
-          <entry key="PHP" value="7551" />
-          <entry key="PLAIN_TEXT" value="102" />
-          <entry key="SCSS" value="3616" />
+          <entry key="JavaScript" value="1889" />
+          <entry key="PHP" value="7697" />
+          <entry key="PLAIN_TEXT" value="167" />
+          <entry key="SCSS" value="3701" />
           <entry key="SVG" value="6" />
         </counts>
       </usages-collector>
@@ -91,10 +88,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/header.php">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/taxonomy-kollektion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="39" column="22" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+            <state relative-caret-position="306">
+              <caret line="75" column="54" lean-forward="true" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -103,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/footer.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -111,26 +117,40 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+            <state relative-caret-position="131">
+              <caret line="84" column="52" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/img/cross.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/js/main.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="667" selection-start-column="667" selection-end-column="667" />
+              <caret column="638" selection-start-column="638" selection-end-column="638" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="131" selection-end-column="29" />
+            <state relative-caret-position="346">
+              <caret line="137" column="29" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -140,24 +160,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="192">
               <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_page.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/Gruntfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="36" column="33" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -176,7 +178,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>@me</find>
       <find>anwaelte</find>
       <find>.mfp-container</find>
       <find>index</find>
@@ -200,12 +201,19 @@
       <find>slick</find>
       <find>vendor</find>
       <find>table</find>
+      <find>caption</find>
+      <find>img-caption</find>
+      <find>product-gallery-modal</find>
+      <find>mfp-content</find>
+      <find>magnificPopup({</find>
+      <find>mfp-close</find>
+      <find>url</find>
     </findStrings>
     <dirStrings>
       <dir>D:\xampp\htdocs\kw</dir>
-      <dir>D:\xampp\htdocs\kw\wp-content\themes\kw</dir>
       <dir>D:\xampp\htdocs\kw\wp-content\themes\kw\js</dir>
       <dir>D:\xampp\htdocs\kw\wp-content\themes\kw\source\js</dir>
+      <dir>D:\xampp\htdocs\kw\wp-content\themes\kw</dir>
       <dir>D:\xampp\htdocs\kw\wp-content\themes\kw\source\scss</dir>
     </dirStrings>
   </component>
@@ -230,14 +238,12 @@
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-modal.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_text-modal.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/single-kollektion.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/archive.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/taxonomy.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/taxonomy-kollektion-feingefuehl.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/archive-kollektion.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss" />
         <option value="$PROJECT_DIR$/wp-config.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/404.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_404.scss" />
@@ -253,13 +259,15 @@
         <option value="$PROJECT_DIR$/wp-content/themes/kw/collections.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_welcome-tiles.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/main.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/kw/taxonomy-kollektion.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_page.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/kw/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/kw/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_header.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/kw/taxonomy-kollektion.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss" />
       </list>
     </option>
   </component>
@@ -278,10 +286,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="3832" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="4099" />
+    <option name="y" value="374" />
+    <option name="width" value="991" />
+    <option name="height" value="536" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -337,6 +345,14 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="kw" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kw" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kw" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="kw" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -346,34 +362,6 @@
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="kw" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kw" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="kw" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kw" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="kw" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="vendor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kw" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="kw" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -391,10 +379,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\kw\wp-content\themes\kw\img" />
       <recent name="D:\xampp\htdocs\kw\wp-content\themes\kw" />
       <recent name="D:\xampp\htdocs\kw\wp-content\themes\kw\source\js" />
       <recent name="D:\xampp\htdocs\kw\wp-content\themes\kw\source\scss" />
-      <recent name="D:\xampp\htdocs\kw\wp-content\themes\kw\img" />
       <recent name="D:\xampp\htdocs\kw\wp-content\themes\kw\js\vendor" />
     </key>
   </component>
@@ -431,7 +419,7 @@
       <workItem from="1594735204451" duration="18305000" />
       <workItem from="1595160168713" duration="3099000" />
       <workItem from="1600774434638" duration="1392000" />
-      <workItem from="1602510677374" duration="2487000" />
+      <workItem from="1602510677374" duration="6728000" />
     </task>
     <task id="LOCAL-00001" summary="Added new collection overview page">
       <created>1594806236762</created>
@@ -461,17 +449,31 @@
       <option name="project" value="LOCAL" />
       <updated>1594817810355</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added new features for mobile menu">
+      <created>1602513346077</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602513346077</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed IMG Caption Bug">
+      <created>1602515526458</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602515526458</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185286000" />
+    <option name="totallyTimeSpent" value="189527000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3832" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -484,7 +486,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.48862407" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28277355" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28277355" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -505,7 +507,9 @@
     <MESSAGE value="Added new taxonomy template" />
     <MESSAGE value="Added post type order plugin" />
     <MESSAGE value="Updated Plugins" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Plugins" />
+    <MESSAGE value="Added new features for mobile menu" />
+    <MESSAGE value="Fixed IMG Caption Bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed IMG Caption Bug" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/package.json">
@@ -542,26 +546,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/categorie-kollektion.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/single-kollektion.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/archive.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/taxonomy.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/archive-kollektion.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/taxonomy-kollektion-feingefuehllllllll.php" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1040">
-          <caret line="91" column="1" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
@@ -650,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/taxonomy-kollektion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="65" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_typographie.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
@@ -699,17 +682,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/js/main.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="667" selection-start-column="667" selection-end-column="667" />
+          <caret column="638" selection-start-column="638" selection-end-column="638" />
         </state>
       </provider>
     </entry>
@@ -717,13 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -741,10 +710,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="131" selection-end-column="29" />
+        <state relative-caret-position="346">
+          <caret line="137" column="29" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/taxonomy-kollektion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="75" column="54" lean-forward="true" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="84" column="52" selection-start-line="84" selection-start-column="52" selection-end-line="84" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/img/cross.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="60" column="14" lean-forward="true" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
         </state>
       </provider>
     </entry>
