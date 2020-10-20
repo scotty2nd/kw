@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fe8ca89-bbc6-41ee-bd8c-c23aa8ffad93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/kw/img/arrow.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/img/arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/img/arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_text-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_text-modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_slick.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_slick.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +37,8 @@
           <entry key="js" value="27" />
           <entry key="json" value="2" />
           <entry key="php" value="66" />
-          <entry key="scss" value="71" />
-          <entry key="svg" value="2" />
+          <entry key="scss" value="72" />
+          <entry key="svg" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -48,8 +48,8 @@
           <entry key="JavaScript" value="27" />
           <entry key="PHP" value="65" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="SCSS" value="71" />
-          <entry key="SVG" value="2" />
+          <entry key="SCSS" value="72" />
+          <entry key="SVG" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -58,9 +58,9 @@
           <entry key="js" value="1889" />
           <entry key="json" value="5" />
           <entry key="php" value="8107" />
-          <entry key="scss" value="3794" />
+          <entry key="scss" value="3825" />
           <entry key="svg" value="6" />
-          <entry key="txt" value="293" />
+          <entry key="txt" value="312" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -70,8 +70,8 @@
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="1889" />
           <entry key="PHP" value="8096" />
-          <entry key="PLAIN_TEXT" value="300" />
-          <entry key="SCSS" value="3794" />
+          <entry key="PLAIN_TEXT" value="319" />
+          <entry key="SCSS" value="3825" />
           <entry key="SVG" value="6" />
         </counts>
       </usages-collector>
@@ -116,15 +116,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/footer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="131">
@@ -133,11 +124,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="415">
               <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/img/arrow.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_slick.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="101" column="43" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -156,15 +161,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_breakpoints.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -179,7 +175,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>page-template</find>
       <find>.wp-block-column</find>
       <find>js-menu</find>
       <find>.js-menu</find>
@@ -209,6 +204,7 @@
       <find>product-gallery-modal</find>
       <find>.mfp-close</find>
       <find>information-text-modal</find>
+      <find>slick-arro</find>
     </findStrings>
     <dirStrings>
       <dir>D:\xampp\htdocs\kw</dir>
@@ -251,7 +247,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/kw/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/home.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_breakpoints.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_slick.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/style-admin.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_typographie.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/Gruntfile.js" />
@@ -269,6 +264,7 @@
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_text-modal.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_slick.scss" />
       </list>
     </option>
   </component>
@@ -429,7 +425,7 @@
       <workItem from="1594735204451" duration="18305000" />
       <workItem from="1595160168713" duration="3099000" />
       <workItem from="1600774434638" duration="1392000" />
-      <workItem from="1602510677374" duration="13368000" />
+      <workItem from="1602510677374" duration="16125000" />
     </task>
     <task id="LOCAL-00001" summary="Added new collection overview page">
       <created>1594806236762</created>
@@ -501,15 +497,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603187832887</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Small modal changes">
+      <created>1603192843131</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1603192843131</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196167000" />
+    <option name="totallyTimeSpent" value="198924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3832" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -551,22 +553,13 @@
     <MESSAGE value="Moved Collection Title out of Slider" />
     <MESSAGE value="Refactorings Collection Slider" />
     <MESSAGE value="Changed max-image size for image gallery" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed max-image size for image gallery" />
+    <MESSAGE value="Small modal changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small modal changes" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_footer.scss" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/js/vendor/slick.min.js" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/js/slick.min.js" />
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/img/arrow.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_overlay.scss" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/js/vendor/jquery.mousewheel-3.0.4.min.js" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/js/vendor/jquery.magnific-popup.min.js" />
@@ -635,13 +628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_slick.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2091">
-          <caret line="123" column="35" selection-start-line="123" selection-start-column="35" selection-end-line="123" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -794,6 +780,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/img/arrow.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/img/arrow.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_slick.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="101" column="43" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
         </state>
       </provider>
     </entry>
