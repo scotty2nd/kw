@@ -14,28 +14,34 @@
             )
         )
     ) );
+
+$collection = get_term_by('slug', $taxonomySlug, 'kollektion');
 ?>
 
-<div class="collection-slider js-collection-slider">
-    <?php while ( $the_query->have_posts() ) : $the_query->the_post();
-        $kollektions  = get_the_terms( $post->ID, 'kollektion' );
+<div class="collection-slider-wrap">
 
-        if($kollektions) :
-            foreach ( $kollektions as $kollektion ) : ?>
-                <?php
-                    $collectionYear = get_field('collection_year', $kollektion);
-                    $productImagesDesktop = get_field('product_images_desktop');
-                    $productImagesTablet = get_field('product_images_tablet');
-                    $productImagesMobile = get_field('product_images_mobile');
-                    $productDescription = get_field('product_description');
-                ?>
+    <span class="collection-name">
+        <?php $collectionYear = get_field('collection_year', $collection); ?>
+        <?php echo $collection->name . ' (' . $collectionYear . ')'; ?>
+    </span>
 
-                   <?php if($kollektion->slug === $taxonomySlug) : ?>
+    <?php wp_reset_postdata(); ?>
+
+    <div class="collection-slider js-collection-slider">
+        <?php while ( $the_query->have_posts() ) : $the_query->the_post();
+            $kollektions  = get_the_terms( $post->ID, 'kollektion' );
+
+            if($kollektions) :
+                foreach ( $kollektions as $kollektion ) : ?>
+                    <?php
+                        $productImagesDesktop = get_field('product_images_desktop');
+                        $productImagesTablet = get_field('product_images_tablet');
+                        $productImagesMobile = get_field('product_images_mobile');
+                        $productDescription = get_field('product_description');
+                    ?>
+
+                    <?php if($kollektion->slug === $taxonomySlug) : ?>
                         <div>
-                            <span class="collection-name">
-                                <?php echo $kollektion->name . ' (' . $collectionYear . ')'; ?>
-                            </span>
-
                             <picture>
                                 <source media="(min-width: 1024px)" srcset="<?php echo $productImagesDesktop[0]['sizes']['large']; ?>">
                                 <source media="(min-width: 768px)" srcset="<?php echo $productImagesTablet[0]['sizes']['large']; ?>">
@@ -49,8 +55,8 @@
 
                             <!--<div class="product-information">
                                 <p class="img-caption"><?php
-                                    echo $productImagesDesktop[0]['caption'];
-                                    ?></p>
+                            echo $productImagesDesktop[0]['caption'];
+                            ?></p>
                             </div>-->
 
                             <div class="product-information">
@@ -92,14 +98,16 @@
                             </div>
                         </div>
                         <?php $index++; ?>
-                    <?php break; ?>
-                <?php endif; ?>
+                        <?php break; ?>
+                    <?php endif; ?>
 
-            <?php endforeach; ?>
-        <?php endif; ?>
-    <?php endwhile; ?>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        <?php endwhile; ?>
 
-    <?php wp_reset_postdata(); ?>
+        <?php wp_reset_postdata(); ?>
+    </div>
 </div>
+
 
 <?php get_footer(); ?>

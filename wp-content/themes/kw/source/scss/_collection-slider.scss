@@ -1,5 +1,5 @@
-.collection-slider {
-  position: static;
+.collection-slider-wrap {
+  position: relative;
 
   .collection-name {
     position: absolute;
@@ -17,6 +17,10 @@
       margin-right: -2rem;
     }
   }
+}
+
+.collection-slider {
+  position: static;
 
   .show-product-gallery {
     position: relative;
