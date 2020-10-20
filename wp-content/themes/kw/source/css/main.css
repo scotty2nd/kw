@@ -966,7 +966,7 @@ button.mfp-close {
   .mfp-gallery .mfp-content.product-gallery-modal {
     overflow: hidden;
     width: calc(100% - 4rem);
-    max-width: 600px;
+    max-width: 400px;
     box-shadow: none; }
     @media (min-width: 1023px) {
       .mfp-gallery .mfp-content.product-gallery-modal {
