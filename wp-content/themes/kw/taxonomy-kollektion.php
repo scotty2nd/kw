@@ -14,25 +14,27 @@
             )
         )
     ) );
-
-$collection = get_term_by('slug', $taxonomySlug, 'kollektion');
 ?>
 
 <div class="collection-slider-wrap">
 
     <span class="collection-name">
-        <?php $collectionYear = get_field('collection_year', $collection); ?>
-        <?php echo $collection->name . ' (' . $collectionYear . ')'; ?>
+        <?php
+            $collection = get_term_by('slug', $taxonomySlug, 'kollektion');
+            $collectionYear = get_field('collection_year', $collection);
+
+            echo $collection->name . ' (' . $collectionYear . ')';
+        ?>
     </span>
 
     <?php wp_reset_postdata(); ?>
 
     <div class="collection-slider js-collection-slider">
         <?php while ( $the_query->have_posts() ) : $the_query->the_post();
-            $kollektions  = get_the_terms( $post->ID, 'kollektion' );
+            $collections  = get_the_terms( $post->ID, 'kollektion' );
 
-            if($kollektions) :
-                foreach ( $kollektions as $kollektion ) : ?>
+            if($collections) :
+                foreach ( $collections as $collection ) : ?>
                     <?php
                         $productImagesDesktop = get_field('product_images_desktop');
                         $productImagesTablet = get_field('product_images_tablet');
@@ -40,7 +42,7 @@ $collection = get_term_by('slug', $taxonomySlug, 'kollektion');
                         $productDescription = get_field('product_description');
                     ?>
 
-                    <?php if($kollektion->slug === $taxonomySlug) : ?>
+                    <?php if($collection->slug === $taxonomySlug) : ?>
                         <div>
                             <picture>
                                 <source media="(min-width: 1024px)" srcset="<?php echo $productImagesDesktop[0]['sizes']['large']; ?>">
