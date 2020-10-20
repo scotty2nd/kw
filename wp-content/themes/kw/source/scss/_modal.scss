@@ -60,6 +60,10 @@ button.mfp-close {
   right: 20px;
   color: #000;
   opacity: 1;
+
+  &:active {
+    top: 20px;
+  }
 }
 
 /* overlay at start */

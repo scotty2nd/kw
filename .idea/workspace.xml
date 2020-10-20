@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3fe8ca89-bbc6-41ee-bd8c-c23aa8ffad93" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/taxonomy-kollektion.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/taxonomy-kollektion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_text-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_text-modal.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +37,7 @@
           <entry key="js" value="27" />
           <entry key="json" value="2" />
           <entry key="php" value="66" />
-          <entry key="scss" value="70" />
+          <entry key="scss" value="71" />
           <entry key="svg" value="2" />
         </counts>
       </usages-collector>
@@ -44,7 +48,7 @@
           <entry key="JavaScript" value="27" />
           <entry key="PHP" value="65" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="SCSS" value="70" />
+          <entry key="SCSS" value="71" />
           <entry key="SVG" value="2" />
         </counts>
       </usages-collector>
@@ -54,9 +58,9 @@
           <entry key="js" value="1889" />
           <entry key="json" value="5" />
           <entry key="php" value="8107" />
-          <entry key="scss" value="3748" />
+          <entry key="scss" value="3794" />
           <entry key="svg" value="6" />
-          <entry key="txt" value="222" />
+          <entry key="txt" value="293" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -66,8 +70,8 @@
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="1889" />
           <entry key="PHP" value="8096" />
-          <entry key="PLAIN_TEXT" value="229" />
-          <entry key="SCSS" value="3748" />
+          <entry key="PLAIN_TEXT" value="300" />
+          <entry key="SCSS" value="3794" />
           <entry key="SVG" value="6" />
         </counts>
       </usages-collector>
@@ -76,15 +80,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/functions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/taxonomy-kollektion.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-689">
@@ -105,8 +100,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+            <state relative-caret-position="187">
+              <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_text-modal.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -129,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+            <state relative-caret-position="415">
+              <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -175,9 +179,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$allProductImages</find>
-      <find>js-collection-slider</find>
-      <find>header-img-andere-seiten-container</find>
       <find>page-template</find>
       <find>.wp-block-column</find>
       <find>js-menu</find>
@@ -204,7 +205,10 @@
       <find>collection-name</find>
       <find>.menu</find>
       <find>.collection-slider</find>
+      <find>.product-gallery-modal</find>
       <find>product-gallery-modal</find>
+      <find>.mfp-close</find>
+      <find>information-text-modal</find>
     </findStrings>
     <dirStrings>
       <dir>D:\xampp\htdocs\kw</dir>
@@ -234,7 +238,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_magnific-popup.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-modal.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_text-modal.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/single.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/single-kollektion.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/archive.php" />
@@ -260,11 +263,12 @@
         <option value="$PROJECT_DIR$/wp-content/themes/kw/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/footer.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js" />
-        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss" />
-        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_header.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_collection-slider.scss" />
         <option value="$PROJECT_DIR$/wp-content/themes/kw/taxonomy-kollektion.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_text-modal.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss" />
+        <option value="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss" />
       </list>
     </option>
   </component>
@@ -283,10 +287,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-8" />
-    <option name="width" value="634" />
-    <option name="height" value="343" />
+    <option name="x" value="4148" />
+    <option name="y" value="286" />
+    <option name="width" value="507" />
+    <option name="height" value="274" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -425,7 +429,7 @@
       <workItem from="1594735204451" duration="18305000" />
       <workItem from="1595160168713" duration="3099000" />
       <workItem from="1600774434638" duration="1392000" />
-      <workItem from="1602510677374" duration="11929000" />
+      <workItem from="1602510677374" duration="13368000" />
     </task>
     <task id="LOCAL-00001" summary="Added new collection overview page">
       <created>1594806236762</created>
@@ -483,17 +487,31 @@
       <option name="project" value="LOCAL" />
       <updated>1603187375345</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Refactorings Collection Slider">
+      <created>1603187652487</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603187652487</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Changed max-image size for image gallery">
+      <created>1603187832887</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603187832887</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194728000" />
+    <option name="totallyTimeSpent" value="196167000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="3832" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20469083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -505,8 +523,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.23510292" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.28277355" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.23510292" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.28277355" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -531,7 +549,9 @@
     <MESSAGE value="Fixed IMG Caption Bug" />
     <MESSAGE value="Added new close modal icon" />
     <MESSAGE value="Moved Collection Title out of Slider" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved Collection Title out of Slider" />
+    <MESSAGE value="Refactorings Collection Slider" />
+    <MESSAGE value="Changed max-image size for image gallery" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed max-image size for image gallery" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/package.json">
@@ -560,13 +580,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_grid.scss">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_text-modal.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/categorie-kollektion.php" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/single-kollektion.php" />
@@ -732,13 +745,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="33" column="23" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -748,13 +754,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/img/cross.svg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -774,6 +773,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-689">
           <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_text-modal.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="29" lean-forward="true" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
         </state>
       </provider>
     </entry>

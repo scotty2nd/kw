@@ -920,6 +920,8 @@ button.mfp-close {
   right: 20px;
   color: #000;
   opacity: 1; }
+  button.mfp-close:active {
+    top: 20px; }
 
 /* overlay at start */
 .mfp-fade.mfp-bg {
@@ -971,6 +973,9 @@ button.mfp-close {
     @media (min-width: 1023px) {
       .mfp-gallery .mfp-content.product-gallery-modal {
         max-width: 800px; } }
+    @media (max-width: 480px) {
+      .mfp-gallery .mfp-content.product-gallery-modal {
+        position: static; } }
     .mfp-gallery .mfp-content.product-gallery-modal img {
       width: 100%;
       height: auto;
@@ -1020,7 +1025,8 @@ button.mfp-close {
   @media (max-width: 480px) {
     .mfp-content.information-text-modal {
       padding: 2.5rem;
-      height: auto; } }
+      height: 100%;
+      box-shadow: none; } }
   .mfp-content.information-text-modal .product-information-text {
     height: 100%; }
 
