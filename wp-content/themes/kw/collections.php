@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div class="tiles js-tiles">
+<div class="tiles js-welcome-tiles">
     <?php
         $kollektions = get_terms( array(
             'taxonomy'   => 'kollektion',
