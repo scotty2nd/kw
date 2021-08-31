@@ -2,22 +2,108 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fe8ca89-bbc6-41ee-bd8c-c23aa8ffad93" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/class-cookie-law-info-admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/css/cookie-law-info-admin-1.6.7.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/css/cookie-law-info-admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/images/add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/images/documentation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/images/support.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/images/wt-cli-info.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/js/cookie-law-info-admin-1.6.7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/js/cookie-law-info-admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/js/cookie-law-info-ckyes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/ccpa/assets/js/cookie-law-info-ccpa-admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/ccpa/assets/js/cookie-law-info-ccpa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/ccpa/ccpa.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/ccpa/views/ccpa_settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cli-policy-generator/assets/css/editor-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cli-policy-generator/assets/js/cli-policy-generator-admin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cli-policy-generator/classes/class-policy-generator-ajax.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cli-policy-generator/classes/class-preview-page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cli-policy-generator/cli-policy-generator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cli-policy-generator/data/data.block1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cli-policy-generator/data/data.block2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cli-policy-generator/data/data.block3.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cli-policy-generator/data/data.block4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cli-policy-generator/data/data.block5.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cli-policy-generator/data/data.policy-generator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cli-policy-generator/views/policy-generator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cookie-scaner/assets/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cookie-scaner/assets/images/screenshot-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cookie-scaner/assets/js/cookie-scaner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cookie-scaner/classes/class-cookie-law-info-cookie-scanner-ajax.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cookie-scaner/classes/class-cookie-law-info-cookie-scanner-api.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cookie-scaner/cookie-scaner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cookie-scaner/views/scan-results.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cookie-scaner/views/settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cookies/cookies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cookies/images/cli_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cookies/views/necessary-settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/cookies/views/non-necessary-settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/modules/uninstall-feedback/uninstall-feedback.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/partials/cookie-law-info-admin_settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/partials/cookie-law-info-privacy_overview.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/views/admin-settings-advanced.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/views/admin-settings-buttons.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/views/admin-settings-general.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/views/admin-settings-help.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/views/admin-settings-messagebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/views/admin-settings-save-button.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/views/admin_necessary_cookie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/views/admin_non_necessary_cookie.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/admin/views/goto-pro.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/cookie-law-info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/images/add.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/images/collapse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/images/cross.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/images/crown.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/images/expand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/images/icon-256x256.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/images/logo-cookieyes.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/images/money-back-badge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/images/overlay.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/images/support.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/images/td_back.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/images/webtoffee-logo_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/includes/class-cookie-law-info-activator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/includes/class-cookie-law-info-cookieyes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/includes/class-cookie-law-info-deactivator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/includes/class-cookie-law-info-i18n.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/includes/class-cookie-law-info-languages.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/includes/class-cookie-law-info-loader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/includes/class-cookie-law-info-review_request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/includes/class-cookie-law-info.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/includes/class-wt-security-helper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/includes/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/languages/cookie-law-info.pot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/license.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/class-cookie-law-info-public.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdpr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-public.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/css/cookie-law-info-table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/images/cli_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/images/logo-cookieyes.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/js/cookie-law-info-public.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/modules/script-blocker/assets/js/script-blocker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/modules/script-blocker/integrations/facebook-for-wordpress.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/modules/script-blocker/integrations/google-analytics-for-wordpress.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/modules/script-blocker/integrations/instagram-feed.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/modules/script-blocker/integrations/twitter-feed.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/modules/script-blocker/script-blocker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/modules/script-blocker/views/settings.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/modules/shortcode/shortcode.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/views/cookie-law-info_bar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/public/views/cookie-law-info_popup_content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/third-party/class-cookie-law-info-third-party.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/third-party/scripts/pixelyoursite/pixelyoursite.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/uninstall.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/cookie-law-info/wpml-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/collections.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/collections.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/js/main.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_collection-slider.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_collection-slider.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_magnific-popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_magnific-popup.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_slick.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_slick.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_text-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_text-modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_tiles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/kw/source/scss/_tiles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +157,7 @@
           <entry key="php" value="8137" />
           <entry key="scss" value="4217" />
           <entry key="svg" value="6" />
-          <entry key="txt" value="382" />
+          <entry key="txt" value="409" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -81,7 +167,7 @@
           <entry key="JSON" value="5" />
           <entry key="JavaScript" value="2108" />
           <entry key="PHP" value="8126" />
-          <entry key="PLAIN_TEXT" value="389" />
+          <entry key="PLAIN_TEXT" value="416" />
           <entry key="SCSS" value="4217" />
           <entry key="SVG" value="6" />
         </counts>
@@ -104,7 +190,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1649">
+                <state relative-caret-position="1241">
                   <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
                 </state>
               </provider>
@@ -122,8 +208,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_tiles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="663">
-                  <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+                <state relative-caret-position="731">
+                  <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -131,8 +217,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1105">
-                  <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+                <state relative-caret-position="1037">
+                  <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -189,8 +275,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="65">
-                  <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+                <state relative-caret-position="34">
+                  <caret line="55" selection-start-line="55" selection-end-line="55" />
                 </state>
               </provider>
             </entry>
@@ -322,6 +408,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/wp-content/themes/kw/source/package.json" />
+      <path value="$PROJECT_DIR$/wp-content/themes/twentytwentyone/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
@@ -336,7 +423,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -353,36 +439,20 @@
               <item name="kw" type="b2602c69:ProjectViewProjectNode" />
               <item name="kw" type="462c0819:PsiDirectoryNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kw" type="b2602c69:ProjectViewProjectNode" />
               <item name="kw" type="462c0819:PsiDirectoryNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="kw" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kw" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="kw" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kw" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kw" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="kw" type="462c0819:PsiDirectoryNode" />
-              <item name="source" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="cookie-law-info" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -540,16 +610,23 @@
       <option name="project" value="LOCAL" />
       <updated>1618911617754</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="wp 5.8 and plugins updated">
+      <created>1630404039483</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1630404039483</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224360000" />
+    <option name="totallyTimeSpent" value="225649000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30268458" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3067114" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -561,8 +638,8 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.31744313" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.51983005" />
+      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.31728044" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.51983005" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -572,6 +649,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -593,7 +696,8 @@
     <MESSAGE value="Added new Slider Arrows" />
     <MESSAGE value="Added new arrows and improved kollektion page" />
     <MESSAGE value="Added new slider arrows" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added new slider arrows" />
+    <MESSAGE value="wp 5.8 and plugins updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="wp 5.8 and plugins updated" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_footer.scss" />
@@ -764,7 +868,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_product-slider-modal.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
+        <state relative-caret-position="1241">
           <caret line="97" column="5" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
         </state>
       </provider>
@@ -778,15 +882,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_tiles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="731">
+          <caret line="43" column="3" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/scss/_modal.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1105">
-          <caret line="65" column="13" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+        <state relative-caret-position="1037">
+          <caret line="66" column="16" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -827,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/kw/source/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="58" column="5" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+        <state relative-caret-position="34">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
         </state>
       </provider>
     </entry>
