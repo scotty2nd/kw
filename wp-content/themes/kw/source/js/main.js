@@ -7,10 +7,11 @@ jQuery( document ).ready(function(){
         menuOverlayContainer = jQuery( '.js-menu-overlay' ),
         burgerIcon = jQuery( '.js-burger-icon' );
 
-    jQuery( '.menu-wrap .title' ).on('click', function (event) {
+
+    jQuery( '.menu-wrap .title' ).mouseenter(function(event) {
+        event.stopPropagation();
         menuContainer.toggleClass( 'open' );
         menuOverlayContainer.removeClass( 'hide' );
-        burgerIcon.toggleClass( 'change' );
     });
 
     menuContainer.mouseleave(function(event) {
@@ -41,19 +42,23 @@ jQuery( document ).ready(function(){
     });
 
     /**
-     * Welcome Tiles
+     * Collection Slider on Home
      */
-    var welcomeTiles = jQuery( '.js-welcome-tiles' );
 
-    welcomeTiles.on('init reInit afterChange', function(event, slick, currentSlide){
-        //currentSlide is undefined on init
-        var currentSlide = (currentSlide ? currentSlide : 0) + 1,
-            currentTitle = welcomeTiles.find( '.slick-current figcaption p' ).text();
+    var collectionSliderNew = jQuery( '.js-collection-slider-new' );
 
-        jQuery( '.slick-dots' ).html( '<li><span class="title">' + currentTitle + '</span> (' + currentSlide + '/' + slick.slideCount + ')</li>');
-    });
+    if(window.innerWidth <= 1023) {
+        console.log('asdsadsad');
+        jQuery( '.js-collection-slider-new' ).on('init reInit afterChange', function(event, slick, currentSlide){
+            //currentSlide is undefined on init
+            var currentSlide = (currentSlide ? currentSlide : 0) + 1,
+                currentTitle = collectionSliderNew.find( '.slick-current figcaption p' ).text();
 
-    welcomeTiles.slick({
+            jQuery( '.slick-dots' ).html( '<li><span class="title">' + currentTitle + '</span> (' + currentSlide + '/' + slick.slideCount + ')</li>');
+        });
+    }
+
+    collectionSliderNew.slick({
         mobileFirst: true,
         arrows: true,
         nextArrow: '<i class="slick-arrow slick-next"></i>',
@@ -62,8 +67,19 @@ jQuery( document ).ready(function(){
         infinite: false,
         responsive: [
             {
-                breakpoint: 1023,
-                settings: "unslick"
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
         ]
     });
@@ -81,7 +97,6 @@ jQuery( document ).ready(function(){
     });
 
     jQuery( '.js-collection-slider' ).on('init reInit afterChange', function(event, slick){
-        console.log(jQuery( '.slick-current .test123' ));
         jQuery( '.slick-current .open-popup-link' ).magnificPopup({
             type:'inline'
         });

@@ -24,7 +24,9 @@
                             <div class="stripe three"></div>
                         </div>
 
-                        <span class="title">Kristina Wirsching</span>
+                        <span class="title">
+                            <a href="/">Kristina Wirsching</a>
+                        </span>
                     </div>
 
                     <div class="menu-outline">

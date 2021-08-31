@@ -1,11 +1,5 @@
-.welcome-tiles,
 .tiles {
-  display: flex;
-  justify-content: space-between;
-
-  @include breakpoint('desktop') {
-    flex-direction: column;
-  }
+  margin-bottom: $unit-spacing;
 
   a {
     text-align: center;
@@ -17,19 +11,36 @@
   }
 
   .item {
-    width: 32%;
     cursor: pointer;
     display: block;
     position: relative;
+  }
 
-    img {
-      width: 100%;
-      display: block;
+  .item-wrap {
+    @include breakpoint('desktop', 'min') {
+      padding-right: $unit-spacing/2;
+      padding-left: $unit-spacing/2;
     }
   }
 
   .slick-arrow {
-    top: calc(50% - 25px);
+    top: calc(50% - 23px);
+
+    &.slick-prev {
+      @include breakpoint('desktop', 'min') {
+        left: 0;
+        top: 50%;
+        transform: translate(-82%, -50%) rotate(180deg);
+      }
+    }
+
+    &.slick-next {
+      @include breakpoint('desktop', 'min') {
+        right: 0;
+        top: 50%;
+        transform: translate(82%, -50%);
+      }
+    }
   }
 
   .slick-dots {
@@ -42,25 +53,5 @@
       font-family: $font-family-italic;
       margin-right: 3px;
     }
-  }
-}
-
-.tiles {
-  @include breakpoint('desktop', 'min') {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .item-wrap {
-    @include breakpoint('desktop', 'min') {
-      width: 33%;
-      padding-right: $unit-spacing/2;
-      padding-left: $unit-spacing/2;
-      margin-bottom: $unit-spacing;
-    }
-  }
-
-  .item {
-    width: 100%;
   }
 }

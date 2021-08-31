@@ -1,3 +1,7 @@
+.mfp-container {
+  max-width: 100vw;
+}
+
 .mfp-bg {
   opacity: .95;
   background-color: #fff;
@@ -35,8 +39,8 @@
   &.information-text-modal {
     padding: 6rem;
     text-align: center;
-    height: 70vh;
-    max-width: 700px;
+    height: 100vh;
+    max-width: 100vw;
 
     @include breakpoint('mobile') {
       padding: 2.5rem;
@@ -60,6 +64,7 @@ button.mfp-close {
   right: 20px;
   color: #000;
   opacity: 1;
+  z-index: 1050;
 
   &:active {
     top: 20px;
