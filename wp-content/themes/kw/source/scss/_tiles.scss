@@ -1,5 +1,9 @@
 .tiles {
-  height: 80vh;
+  height: 70vh;
+
+  @include breakpoint('desktop', 'min') {
+    height: 80vh;
+  }
 
   a {
     text-align: center;

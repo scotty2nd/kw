@@ -9,19 +9,20 @@
 
 .collection-slider-wrap {
   position: relative;
-  height: 80vh;
+  height: 70vh;
   padding-top: 3rem;
+
+  @include breakpoint('desktop', 'min') {
+    height: 80vh;
+  }
 }
 
 .collection-slider {
-  //position: static;
-
   .show-product-gallery {
     position: relative;
     display: block;
     width: 100%;
     max-width: 500px;
-   // margin: 0 auto 6rem;
 
     &:hover {
       svg {

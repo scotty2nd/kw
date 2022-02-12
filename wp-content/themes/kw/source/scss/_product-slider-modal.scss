@@ -88,13 +88,22 @@
     }
 
     &.mfp-arrow-left {
-      left: 55px;
+      left: 0;
+
+      @include breakpoint('desktop', 'min') {
+        left: 55px;
+      }
+
       transform: translateY(-50%) rotate(180deg);
       transform-origin: center;
     }
 
     &.mfp-arrow-right {
-      right: 55px;
+      right: 0;
+
+      @include breakpoint('desktop', 'min') {
+        right: 55px;
+      }
     }
 
     &:before,
