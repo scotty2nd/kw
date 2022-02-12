@@ -29,7 +29,9 @@
   overflow: hidden;
   display: block;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  height: 100%;
+  max-height: 80vh; }
   .slick-list:focus {
     outline: none; }
   .slick-list.dragging {
@@ -49,7 +51,8 @@
   top: 0;
   display: block;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  height: 100%; }
   .slick-track:before, .slick-track:after {
     content: "";
     display: table; }
@@ -91,7 +94,7 @@
   background-size: contain;
   border: none;
   position: absolute;
-  top: 50%;
+  top: calc(50% - 53px);
   transform: translateY(-50%);
   width: 60px;
   height: 60px;
@@ -115,13 +118,13 @@
     opacity: .1;
     pointer-events: none; }
   .slick-arrow.slick-prev {
-    left: 0;
+    left: -25px;
     transform: translateY(-50%) rotate(180deg); }
     @media (max-width: 480px) {
       .slick-arrow.slick-prev {
         left: -1.9rem; } }
   .slick-arrow.slick-next {
-    right: 0; }
+    right: -25px; }
     @media (max-width: 480px) {
       .slick-arrow.slick-next {
         right: -1.9rem; } }
@@ -565,6 +568,9 @@ body {
   max-width: 1025px;
   line-height: 1.3; }
 
+body.home {
+  max-width: 1235px; }
+
 * {
   box-sizing: border-box; }
 
@@ -573,6 +579,7 @@ ul {
 
 .page-wrap {
   margin: 2rem;
+  margin-bottom: 0;
   position: relative;
   min-height: calc(100vh - 4rem);
   display: flex;
@@ -585,12 +592,12 @@ ul {
   background: -moz-linear-gradient(45deg, white 0%, rgba(0, 0, 0, 0.3) 150%);
   background: -webkit-linear-gradient(45deg, white 0%, rgba(0, 0, 0, 0.3) 150%);
   background: linear-gradient(45deg, white 0%, rgba(0, 0, 0, 0.3) 150%); }
-  .effect-oscar:hover picture {
+  .effect-oscar:hover .picture {
     opacity: 0.4; }
   .effect-oscar:hover p {
     opacity: .99;
     transform: translate(-50%, -50%) scale(1); }
-  .effect-oscar picture {
+  .effect-oscar .picture {
     opacity: 1;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s; }
@@ -617,13 +624,11 @@ ul {
 
 .header {
   margin-bottom: 2.5rem;
-  position: inherit;
+  position: relative;
   z-index: 15; }
   @media (max-width: 480px) {
     .header {
       margin-bottom: 2rem; } }
-  .tax-kollektion .header {
-    margin-bottom: 0; }
   .header .menu-wrap {
     position: relative;
     text-align: center; }
@@ -751,7 +756,7 @@ ul {
     transform: rotate(45deg) translate(-5px, -3px); } }
 
 .tiles {
-  margin-bottom: 24px; }
+  height: 80vh; }
   .tiles a {
     text-align: center;
     font-family: "Publico-Banner-Light", sans-serif; }
@@ -760,21 +765,20 @@ ul {
   .tiles .item {
     cursor: pointer;
     display: block;
-    position: relative; }
+    position: relative;
+    height: 100%; }
   @media (min-width: 1023px) {
     .tiles .item-wrap {
-      padding-right: 12px;
-      padding-left: 12px; } }
+      padding-right: 9px;
+      padding-left: 9px; } }
   .tiles .slick-arrow {
     top: calc(50% - 23px); }
     @media (min-width: 1023px) {
       .tiles .slick-arrow.slick-prev {
-        left: 0;
         top: 50%;
-        transform: translate(-82%, -50%) rotate(180deg); } }
+        transform: translate(-50%, -50%) rotate(180deg); } }
     @media (min-width: 1023px) {
       .tiles .slick-arrow.slick-next {
-        right: 0;
         top: 50%;
         transform: translate(82%, -50%); } }
   .tiles .slick-dots {
@@ -786,75 +790,63 @@ ul {
       font-family: "Publico-Banner-Light-Italic", sans-serif;
       margin-right: 3px; }
 
-.collection-slider-wrap {
-  position: relative; }
-  .collection-slider-wrap .collection-name {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    max-width: 1025px;
-    text-align: center;
-    font-family: "Publico-Banner-Light-Italic", sans-serif;
-    margin-top: -1px;
-    margin-left: -2rem;
-    margin-right: -2rem; }
-    @media (max-width: 480px) {
-      .collection-slider-wrap .collection-name {
-        margin-left: -2rem;
-        margin-right: -2rem; } }
+.collection-name {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  max-width: 1025px;
+  text-align: center;
+  font-family: "Publico-Banner-Light-Italic", sans-serif; }
 
-.collection-slider {
-  position: static; }
-  .collection-slider .show-product-gallery {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto 6rem; }
-    .collection-slider .show-product-gallery:hover svg {
-      opacity: 1;
-      width: 50px;
-      height: 50px; }
-    @media (max-width: 768px) {
-      .collection-slider .show-product-gallery {
-        margin-bottom: 5rem; } }
-    .collection-slider .show-product-gallery svg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      z-index: 15;
-      width: 0;
-      height: 0;
-      opacity: 0;
-      transform: translate(-50%, -50%);
-      -webkit-transition: all .3s ease;
-      -moz-transition: all .3s ease;
-      -ms-transition: all .3s ease;
-      -o-transition: all .3s ease;
-      transition: all .3s ease; }
-  .collection-slider .img-item {
-    width: 100%; }
-    .tax-kollektion .collection-slider .img-item {
-      position: relative;
-      display: block;
-      width: 100%;
-      max-width: 500px;
-      margin: 0 auto 6rem; }
-      @media (max-width: 480px) {
-        .tax-kollektion .collection-slider .img-item {
-          margin-bottom: 5rem; } }
-  .collection-slider .product-title {
-    font-family: "Publico-Banner-Light-Italic", sans-serif;
-    display: inline-block;
-    text-align: center;
-    width: 100%; }
-  .collection-slider .product-information {
-    text-align: center; }
-  .collection-slider .slick-track {
-    padding-top: 6rem; }
-    @media (max-width: 480px) {
-      .collection-slider .slick-track {
-        padding-top: 5rem; } }
+.collection-slider-wrap {
+  position: relative;
+  height: 80vh;
+  padding-top: 3rem; }
+
+.collection-slider .show-product-gallery {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 500px; }
+  .collection-slider .show-product-gallery:hover svg {
+    opacity: 1;
+    width: 50px;
+    height: 50px; }
+  @media (max-width: 768px) {
+    .collection-slider .show-product-gallery {
+      margin-bottom: 5rem; } }
+  .collection-slider .show-product-gallery svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 15;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
+
+.collection-slider .img-item {
+  max-height: calc(100% - 115px);
+  margin-left: auto;
+  margin-right: auto; }
+
+.collection-slider .product-title {
+  font-family: "Publico-Banner-Light-Italic", sans-serif;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  padding-top: 4rem; }
+
+.collection-slider .product-information {
+  text-align: center; }
+
+.collection-slider.slick-slider, .slick-list, .slick-track {
+  height: 100%; }
 
 .mfp-container {
   max-width: 100vw; }
@@ -885,7 +877,9 @@ ul {
     display: flex;
     align-items: center;
     height: 100%;
-    text-align: center; }
+    text-align: center;
+    flex-direction: column;
+    justify-content: center; }
   .mfp-content.information-text-modal {
     padding: 6rem;
     text-align: center;
@@ -999,7 +993,7 @@ button.mfp-close {
   transform: translateY(-50%);
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
-  background-size: 12%;
+  background-size: 20%;
   background-position: center;
   width: 20%;
   height: 100%;

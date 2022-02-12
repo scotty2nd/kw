@@ -3,7 +3,7 @@ ob_start();
 $overview                 = get_option( 'cookielawinfo_privacy_overview_content_settings' );
 $default_privacy_settings = Cookie_Law_Info_Admin::get_privacy_defaults();
 
-$cli_always_enable_text   = __( 'Always Enabled', 'cookie-law-info' );
+$cli_always_enable_text   = __( 'Immer aktiv', 'cookie-law-info' );
 $cli_enable_text          = __( 'Enabled', 'cookie-law-info' );
 $cli_disable_text         = __( 'Disabled', 'cookie-law-info' );
 $cli_privacy_readmore     = '<a class="cli-privacy-readmore"  aria-label="' . __('Show more', 'cookie-law-info') . '" tabindex="0" role="button" data-readmore-text="' . __( 'Show more', 'cookie-law-info' ) . '" data-readless-text="' . __( 'Show less', 'cookie-law-info' ) . '"></a>';

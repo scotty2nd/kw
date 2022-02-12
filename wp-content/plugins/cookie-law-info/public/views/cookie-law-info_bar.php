@@ -32,7 +32,7 @@ if ( file_exists( $pop_content_html_file ) ) {
 						<div class="cli-tab-footer wt-cli-privacy-overview-actions">
 						
 							<?php if ( apply_filters( 'wt_cli_enable_settings_accept_btn', true ) === true ) : ?>
-								<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn"><?php echo __( 'SAVE & ACCEPT', 'cookie-law-info' ); ?></a>
+								<a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn"><?php echo __( 'speichern & akzeptieren', 'cookie-law-info' ); ?></a>
 							<?php endif; ?>
 						</div>
 						<?php if ( apply_filters( 'wt_cli_enable_ckyes_branding', true ) === true ) : ?>

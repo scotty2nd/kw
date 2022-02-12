@@ -64,7 +64,6 @@ jQuery( document ).ready(function(){
         nextArrow: '<i class="slick-arrow slick-next"></i>',
         prevArrow: '<i class="slick-arrow slick-prev"></i>',
         dots: true,
-        infinite: false,
         responsive: [
             {
                 breakpoint: 1024,
@@ -91,7 +90,6 @@ jQuery( document ).ready(function(){
     jQuery( '.js-collection-slider' ).slick({
         mobileFirst: true,
         dots: false,
-        infinite: false,
         nextArrow: '<i class="slick-arrow slick-next"></i>',
         prevArrow: '<i class="slick-arrow slick-prev"></i>'
     });

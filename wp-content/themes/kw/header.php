@@ -10,6 +10,8 @@
     <?php
         if( is_front_page() ){
             $kw_classes = array( 'kw-class', 'home' );
+        }else {
+            $kw_classes = '';
         }
     ?>
 	

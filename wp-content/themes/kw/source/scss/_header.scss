@@ -1,14 +1,10 @@
 .header {
   margin-bottom: 2.5rem;
-  position: inherit;
+  position: relative;
   z-index: 15;
 
   @include breakpoint('mobile') {
     margin-bottom: 2rem;
-  }
-
-  .tax-kollektion & {
-    margin-bottom: 0;
   }
 
   .menu-wrap {

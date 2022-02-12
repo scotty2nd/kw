@@ -15,6 +15,10 @@ body {
   line-height: $font-lineheight;
 }
 
+body.home {
+  max-width: 1235px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -25,6 +29,7 @@ ul {
 
 .page-wrap {
   margin: 2rem;
+  margin-bottom: 0;
   position: relative;
   min-height: calc(100vh - 4rem);
   display: flex;
@@ -42,7 +47,7 @@ ul {
   background: linear-gradient(45deg, rgb(255, 255, 255) 0%, rgba(0, 0, 0,.3) 150%);
 
   &:hover {
-    picture {
+    .picture {
       opacity: 0.4;
     }
 
@@ -52,7 +57,7 @@ ul {
     }
   }
 
-  picture {
+  .picture {
     opacity: 1;
     -webkit-transition: opacity 0.35s;
     transition: opacity 0.35s;

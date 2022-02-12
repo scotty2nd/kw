@@ -104,6 +104,9 @@ $table_prefix = 'wp_';
  */
 define( 'WP_DEBUG', false );
 define( 'DISALLOW_FILE_EDIT', true);
+define('WP_DEBUG_DISPLAY', false);
+ini_set('display_errors','Off');
+ini_set('error_reporting', E_ALL );
 
 /* Das war’s, Schluss mit dem Bearbeiten! Viel Spaß. */
 /* That's all, stop editing! Happy publishing. */

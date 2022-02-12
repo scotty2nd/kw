@@ -20,6 +20,8 @@
     display: block;
     margin: 0;
     padding: 0;
+    height: 100%;
+    max-height: 80vh;
 
     &:focus {
         outline: none;
@@ -45,6 +47,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
 
     &:before,
     &:after {
@@ -105,7 +108,7 @@
     background-size: contain;
     border: none;
     position: absolute;
-    top: 50%;
+    top: calc(50% - 53px);;
     transform: translateY(-50%);
     width: 60px;
     height: 60px;
@@ -136,7 +139,7 @@
     }
 
     &.slick-prev {
-        left: 0;
+        left: -25px;
         transform: translateY(-50%) rotate(180deg);
 
         @include breakpoint('mobile') {
@@ -145,7 +148,7 @@
     }
 
     &.slick-next {
-        right: 0;
+        right: -25px;
 
         @include breakpoint('mobile') {
             right: -1.9rem

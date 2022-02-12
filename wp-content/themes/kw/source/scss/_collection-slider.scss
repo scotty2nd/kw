@@ -1,33 +1,27 @@
+.collection-name {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  max-width: 1025px;
+  text-align: center;
+  font-family: $font-family-italic;
+}
+
 .collection-slider-wrap {
   position: relative;
-
-  .collection-name {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    max-width: 1025px;
-    text-align: center;
-    font-family: $font-family-italic;
-    margin-top: -1px;
-    margin-left: -2rem;
-    margin-right: -2rem;
-
-    @include breakpoint('mobile') {
-      margin-left: -2rem;
-      margin-right: -2rem;
-    }
-  }
+  height: 80vh;
+  padding-top: 3rem;
 }
 
 .collection-slider {
-  position: static;
+  //position: static;
 
   .show-product-gallery {
     position: relative;
     display: block;
     width: 100%;
     max-width: 500px;
-    margin: 0 auto 6rem;
+   // margin: 0 auto 6rem;
 
     &:hover {
       svg {
@@ -60,19 +54,9 @@
   }
 
   .img-item {
-    width: 100%;
-
-    .tax-kollektion & {
-      position: relative;
-      display: block;
-      width: 100%;
-      max-width: 500px;
-      margin: 0 auto 6rem;
-
-      @include breakpoint('mobile') {
-        margin-bottom: 5rem;
-      }
-    }
+    max-height: calc(100% - 115px);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .product-title {
@@ -80,17 +64,16 @@
     display: inline-block;
     text-align: center;
     width: 100%;
+    padding-top: 4rem;
   }
 
   .product-information {
     text-align: center;
   }
 
-  .slick-track {
-    padding-top: 6rem;
 
-    @include breakpoint('mobile') {
-      padding-top: 5rem;
-    }
-  }
+}
+
+.collection-slider.slick-slider, .slick-list, .slick-track {
+  height: 100%;
 }
