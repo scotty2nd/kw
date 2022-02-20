@@ -638,18 +638,20 @@ ul {
     justify-content: center; }
   .header .title {
     display: inline-block;
-    font-size: 1.1rem;
     cursor: pointer;
+    max-width: 40px;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease; }
-    .header .title:hover {
-      font-style: italic; }
-    @media (max-width: 480px) {
+    @media (min-width: 1023px) {
       .header .title {
-        font-size: 1.2rem; } }
+        max-width: 100px; } }
+    .header .title > a {
+      display: block; }
+      .header .title > a:hover {
+        transform: skewX(-20deg); }
   @media (max-width: 480px) {
     .header .change + .title {
       font-style: italic; } }
@@ -759,7 +761,7 @@ ul {
   height: 70vh; }
   @media (min-width: 1023px) {
     .tiles {
-      height: 80vh; } }
+      height: 75vh; } }
   .tiles a {
     text-align: center;
     font-family: "Publico-Banner-Light", sans-serif; }
@@ -779,7 +781,7 @@ ul {
     @media (min-width: 1023px) {
       .tiles .slick-arrow.slick-prev {
         top: 50%;
-        transform: translate(-50%, -50%) rotate(180deg); } }
+        transform: translate(-82%, -50%) rotate(180deg); } }
     @media (min-width: 1023px) {
       .tiles .slick-arrow.slick-next {
         top: 50%;
@@ -795,7 +797,7 @@ ul {
 
 .collection-name {
   position: absolute;
-  top: 25px;
+  top: 60px;
   width: 100%;
   max-width: 1025px;
   text-align: center;
@@ -807,7 +809,7 @@ ul {
   padding-top: 3rem; }
   @media (min-width: 1023px) {
     .collection-slider-wrap {
-      height: 80vh; } }
+      height: 75vh; } }
 
 .collection-slider .show-product-gallery {
   position: relative;
@@ -896,7 +898,10 @@ ul {
         padding: 2.5rem;
         height: auto; } }
     .mfp-content.information-text-modal .product-information-text {
-      height: 100%; }
+      height: 100%;
+      max-width: 617px;
+      margin: 0 auto;
+      text-align: left; }
 
 button.mfp-close {
   cursor: pointer;

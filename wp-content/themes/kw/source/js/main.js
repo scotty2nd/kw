@@ -20,6 +20,12 @@ jQuery( document ).ready(function(){
         menuOverlayContainer.addClass( 'hide' );
     });
 
+    jQuery( '.header .title' ).mouseleave(function(event) {
+        event.stopPropagation();
+        menuContainer.removeClass( 'open' );
+        menuOverlayContainer.addClass( 'hide' );
+    });
+
     jQuery( '.js-menu-overlay' ).on('click', function (event) {
         event.stopPropagation();
         menuContainer.toggleClass( 'open' );

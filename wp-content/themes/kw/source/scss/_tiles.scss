@@ -2,7 +2,7 @@
   height: 70vh;
 
   @include breakpoint('desktop', 'min') {
-    height: 80vh;
+    height: 75vh;
   }
 
   a {
@@ -34,7 +34,7 @@
     &.slick-prev {
       @include breakpoint('desktop', 'min') {
         top: 50%;
-        transform: translate(-50%, -50%) rotate(180deg);
+        transform: translate(-82%, -50%) rotate(180deg);
       }
     }
 
