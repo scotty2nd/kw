@@ -647,11 +647,11 @@ ul {
     transition: all .3s ease; }
     @media (min-width: 1023px) {
       .header .title {
-        max-width: 100px; } }
+        max-width: 60px; } }
     .header .title > a {
       display: block; }
       .header .title > a:hover {
-        transform: skewX(-20deg); }
+        transform: skewX(-5deg); }
   @media (max-width: 480px) {
     .header .change + .title {
       font-style: italic; } }
@@ -797,7 +797,7 @@ ul {
 
 .collection-name {
   position: absolute;
-  top: 60px;
+  top: 42px;
   width: 100%;
   max-width: 1025px;
   text-align: center;

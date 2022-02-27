@@ -24,7 +24,7 @@
     max-width: 40px;
 
     @include breakpoint('desktop', 'min') {
-      max-width: 100px;
+      max-width: 60px;
     }
 
 
@@ -37,7 +37,7 @@
     > a {
       display: block;
       &:hover {
-        transform: skewX(-20deg);
+        transform: skewX(-5deg);
       }
     }
 
