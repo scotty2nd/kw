@@ -11,6 +11,7 @@
         $kollektions = get_terms( array(
             'taxonomy'   => 'kollektion',
             'hide_empty' => true,
+            'order' => 'DESC',
         ));
 
         // Alle Kollektionen durchlaufen

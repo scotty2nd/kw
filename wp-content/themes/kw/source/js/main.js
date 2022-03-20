@@ -4,41 +4,13 @@ jQuery( document ).ready(function(){
      */
 
     var menuContainer = jQuery( '.js-menu' ),
-        menuOverlayContainer = jQuery( '.js-menu-overlay' ),
         burgerIcon = jQuery( '.js-burger-icon' );
-
-
-    jQuery( '.menu-wrap .title' ).mouseenter(function(event) {
-        event.stopPropagation();
-        menuContainer.toggleClass( 'open' );
-        menuOverlayContainer.removeClass( 'hide' );
-    });
-
-    menuContainer.mouseleave(function(event) {
-        event.stopPropagation();
-        menuContainer.toggleClass( 'open' );
-        menuOverlayContainer.addClass( 'hide' );
-    });
-
-    jQuery( '.header .title' ).mouseleave(function(event) {
-        event.stopPropagation();
-        menuContainer.removeClass( 'open' );
-        menuOverlayContainer.addClass( 'hide' );
-    });
-
-    jQuery( '.js-menu-overlay' ).on('click', function (event) {
-        event.stopPropagation();
-        menuContainer.toggleClass( 'open' );
-        menuOverlayContainer.addClass( 'hide' );
-        burgerIcon.toggleClass( 'change' );
-    });
-
 
     /**
      * Burger Menu Animation
      */
 
-    jQuery( '.js-burger-icon' ).on('click', function (event) {
+    burgerIcon.on('click', function (event) {
         // Icon Animation
         jQuery( this ).toggleClass( 'change' );
 

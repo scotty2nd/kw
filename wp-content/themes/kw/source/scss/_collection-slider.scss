@@ -1,10 +1,17 @@
 .collection-name {
   position: absolute;
-  top: 42px;
+  top: 29px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   max-width: 1025px;
   text-align: center;
   font-family: $font-family-italic;
+
+
+  @include breakpoint('desktop', 'min') {
+    top: 42px;
+  }
 }
 
 .collection-slider-wrap {

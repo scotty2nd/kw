@@ -35,7 +35,7 @@ $the_query = new WP_Query( array(
 <div class="page-wrap">
     <header class="header">
         <div class="menu-wrap">
-            <div class="flex-wrap">
+            <div class="flex-wrap menu-title">
                 <div class="burger-icon js-burger-icon">
                     <div class="stripe one"></div>
                     <div class="stripe two"></div>
@@ -49,12 +49,12 @@ $the_query = new WP_Query( array(
                 </span>
             </div>
 
-            <div class="menu-outline">
+            <div class="menu-outline menu-items js-menu ">
                 <?php
                 wp_nav_menu(array(
                         'theme_location' => 'primary',
                         'container' => false,
-                        'menu_class' => 'js-menu menu navbar-nav'
+                        'menu_class' => 'menu navbar-nav'
                     )
                 );
                 ?>

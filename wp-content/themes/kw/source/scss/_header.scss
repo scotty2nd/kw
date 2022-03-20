@@ -2,6 +2,7 @@
   margin-bottom: 2.5rem;
   position: relative;
   z-index: 15;
+  text-align: center;
 
   @include breakpoint('mobile') {
     margin-bottom: 2rem;
@@ -9,7 +10,48 @@
 
   .menu-wrap {
     position: relative;
-    text-align: center;
+    display: inline-block;
+    z-index: 2;
+
+    &:hover {
+      .menu-items {
+        max-height: 500px;
+        transition: max-height 0.25s ease-in;
+      }
+    }
+  }
+
+  .menu-items {
+    position: absolute;
+    top: 43px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+
+    transition: max-height 0.15s ease-out;
+
+    @include breakpoint('desktop', 'min') {
+      display: inline-block;
+    }
+
+    @include breakpoint('tablet') {
+      top: 28px;
+
+      &.open {
+        max-height: 1000px;
+        transition: max-height 0.25s ease-in;
+      }
+    }
+
   }
 
   .flex-wrap {
@@ -40,18 +82,12 @@
         transform: skewX(-5deg);
       }
     }
-
-
   }
 
   .change + .title {
     @include breakpoint('mobile') {
       font-style: italic;
     }
-  }
-
-  .menu-outline {
-    position: relative;
   }
 
   .menu {
@@ -61,39 +97,12 @@
     padding-bottom: 0;
     margin-bottom: 0;
     margin-top: 0;
-    position: absolute;
-    left: 0;
-    top: 4px;
-    z-index: 10;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    background-color: #fff;
 
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
-
-    &.open {
-      max-height: 1000px;
-      margin-bottom: 5px;
-      margin-left: -50vw;
-      margin-right: -50vw;
-      margin-top: 0;
-      padding-top: 5px;
-      width: 100vw;
-      top: 0;
-      left: 50%;
-      right: 50%;
-
-      -webkit-transition: all .3s ease;
-      -moz-transition: all .3s ease;
-      -ms-transition: all .3s ease;
-      -o-transition: all .3s ease;
-      transition: all .3s ease;
-    }
 
     .menu-item {
       &.current-menu-item {
@@ -123,7 +132,6 @@
         &:hover {
           font-family: $font-family-italic;
         }
-
       }
     }
   }
@@ -155,6 +163,7 @@
     cursor: pointer;
     margin-right: 10px;
     margin-top: 1px;
+    margin-left: -20px;
   }
 }
 
