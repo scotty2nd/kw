@@ -1,0 +1,75 @@
+.swipeable-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 75vh;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: relative;
+
+  &.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+
+    .handswipe {
+      display: none;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  > h2 {
+    page-break-before: always;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 18px;
+    margin-right: 2em;
+    width: 30%;
+  }
+
+  > p {
+    width: 30%;
+    margin-right: 2em;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.handswipe > img {
+  max-width: 50px;
+}
+
+.swipe {
+  position: absolute;
+  right: -25px;
+  top: calc(50% - 40px);
+  width: 60px;
+  transform: translateY(-50%) translateX(100%) rotate(180deg);
+}
+
+@media (max-width:768px) {
+  .swipeable-text {
+    flex-direction: row;
+
+    > h2,
+    > p {
+      display: block;
+      width: 100%;
+    }
+
+    .handswipe {
+      display: none;
+    }
+  }
+}

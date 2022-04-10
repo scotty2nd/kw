@@ -1,14 +1,12 @@
 jQuery( document ).ready(function(){
-    /**
-     * Hauptmenu
-     */
 
-    var menuContainer = jQuery( '.js-menu' ),
-        burgerIcon = jQuery( '.js-burger-icon' );
 
     /**
      * Burger Menu Animation
      */
+
+    var menuContainer = jQuery( '.js-menu' ),
+        burgerIcon = jQuery( '.js-burger-icon' );
 
     burgerIcon.on('click', function (event) {
         // Icon Animation
@@ -26,7 +24,6 @@ jQuery( document ).ready(function(){
     var collectionSliderNew = jQuery( '.js-collection-slider-new' );
 
     if(window.innerWidth <= 1023) {
-        console.log('asdsadsad');
         jQuery( '.js-collection-slider-new' ).on('init reInit afterChange', function(event, slick, currentSlide){
             //currentSlide is undefined on init
             var currentSlide = (currentSlide ? currentSlide : 0) + 1,
@@ -124,5 +121,33 @@ jQuery( document ).ready(function(){
                 jQuery( '.mfp-content' ).addClass( 'information-text-modal' );
             }
         }
+    });
+
+    var slider = document.querySelector('.swipeable-text'),
+        isDown = false,
+        startX,
+        scrollLeft;
+
+    slider.addEventListener('mousedown', function(e){
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', function() {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', function() {
+        isDown = false;
+        slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', function(e) {
+        if(!isDown) return;
+        e.preventDefault();
+        var x = e.pageX - slider.offsetLeft,
+            walk = (x - startX) * 3; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        document.querySelector('.handswipe').style.display = 'none';
     });
 });

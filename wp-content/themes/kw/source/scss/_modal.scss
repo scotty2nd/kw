@@ -1,5 +1,7 @@
 .mfp-container {
-  max-width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .mfp-bg {
@@ -15,7 +17,6 @@
 
 .mfp-content {
   background-color: #fff;
-  box-shadow: 0 0 3px 0 rgba(0,0,0,0.1);
   width: 90%;
 
   -webkit-transition: all .4s ease;
@@ -73,6 +74,16 @@ button.mfp-close {
 
   &:active {
     top: 20px;
+
+    @include breakpoint('desktop', 'min') {
+      top: 70px;
+      right: 115px;
+    }
+  }
+
+  @include breakpoint('desktop', 'min') {
+    top: 70px;
+    right: 115px;
   }
 }
 
