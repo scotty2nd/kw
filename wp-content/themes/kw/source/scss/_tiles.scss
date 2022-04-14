@@ -5,6 +5,10 @@
     height: 75vh;
   }
 
+  @include breakpoint('mobile', 'max') {
+    height: calc(100vh - 7rem);
+  }
+
   a {
     text-align: center;
     font-family: $font-family;
@@ -55,6 +59,19 @@
     .title {
       font-family: $font-family-italic;
       margin-right: 3px;
+    }
+  }
+
+  .slick-list {
+    @include breakpoint('mobile', 'max') {
+      height: calc(100% - 40px);
+    }
+  }
+
+  .slick-arrow {
+    @include breakpoint('mobile', 'max') {
+      top: 50%;
+      margin-top: -44px;
     }
   }
 }

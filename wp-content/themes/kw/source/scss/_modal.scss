@@ -79,11 +79,20 @@ button.mfp-close {
       top: 70px;
       right: 115px;
     }
+
+    @include breakpoint('mobile') {
+      top: -35px;
+    }
   }
 
   @include breakpoint('desktop', 'min') {
     top: 70px;
     right: 115px;
+  }
+
+  @include breakpoint('mobile') {
+    top: -35px;
+    right: 10px;
   }
 }
 

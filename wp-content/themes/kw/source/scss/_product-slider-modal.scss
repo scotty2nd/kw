@@ -30,8 +30,12 @@
         padding: 6rem;
       }
 
-      @include breakpoint('mobile') {
-        position: static;
+      @include breakpoint('mobile', 'max') {
+        position: absolute;
+        top: calc(50% + 25px);
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: visible;
       }
 
       .slide {
@@ -55,13 +59,24 @@
 
       .img-caption {
         text-align: center;
-        margin-top: 8px;
+        margin: 8px auto;
         font-size: 12px;
         height: 50px;
+        max-width: 50%;
+
+        @include breakpoint('mobile', 'max') {
+          max-width: none;
+        }
       }
 
       .counter {
         display: block;
+      }
+
+      .mfp-close {
+        @include breakpoint('mobile', 'max') {
+          right: 0;
+        }
       }
     }
   }

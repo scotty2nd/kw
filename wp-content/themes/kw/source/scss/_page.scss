@@ -36,6 +36,13 @@ ul {
   flex-direction: column;
   justify-content: center;
 
+  @include breakpoint('mobile', 'max') {
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+  }
+
   .page-template-default & {
     justify-content: normal;
   }
