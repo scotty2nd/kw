@@ -29,7 +29,7 @@ jQuery( document ).ready(function(){
             var currentSlide = (currentSlide ? currentSlide : 0) + 1,
                 currentTitle = collectionSliderNew.find( '.slick-current figcaption p' ).text();
 
-            jQuery( '.slick-dots' ).html( '<li><span class="title">' + currentTitle + '</span> (' + currentSlide + '/' + slick.slideCount + ')</li>');
+            jQuery( '.slick-dots' ).html( '<li><span class="title">' + currentTitle + '</span></li>');
         });
     }
 

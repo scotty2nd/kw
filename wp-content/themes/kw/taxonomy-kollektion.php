@@ -114,19 +114,35 @@ $the_query = new WP_Query( array(
 
                             <div id="gallery<?php echo $index; ?>" class="js-product-information-gallery mfp-hide">
                                 <?php if( $productImagesDesktop ): ?>
-                                    <?php $count = 1; ?>
+                                    <?php $count = 0; ?>
                                     <?php foreach ( $productImagesDesktop as $productDesktopImage ) : ?>
+
                                         <div class="slide">
-                                            <picture>
-                                                <source media="(min-width: 1024px)" srcset="<?php if ( isset ( $productDesktopImage ) ){echo $productDesktopImage['sizes']['large'];} ?>">
-                                                <source media="(min-width: 768px)" srcset="<?php if ( isset ( $productImagesTablet ) ){echo $productImagesTablet['sizes']['large'];} ?>">
-                                                <source media="(min-width: 320px)" srcset="<?php if ( isset ( $productImagesMobile ) ){echo $productImagesMobile['sizes']['large'];} ?>">
-                                                <img src="<?php if ( isset ( $productDesktopImage ) ){echo $productDesktopImage['sizes']['large'];} ?>">
-                                            </picture>
+                                            <style type="text/css">
+
+                                                .image-holder.<?php echo $productDesktopImage['name']; ?> {
+                                                    background-image: url('<?php echo $productImagesMobile[$count]['sizes']['large']; ?>');
+                                                }
+
+                                                @media only screen and (min-width: 768px) {
+                                                    .image-holder.<?php echo $productDesktopImage['name']; ?> {
+                                                        background-image: url('<?php echo $productImagesTablet[$count]['sizes']['large']; ?>');
+                                                    }
+                                                }
+
+                                                @media only screen and (min-width: 1024px) {
+                                                    .image-holder.<?php echo $productDesktopImage['name']; ?> {
+                                                        background-image: url('<?php echo $productDesktopImage['sizes']['large']; ?>');
+                                                    }
+                                                }
+                                            </style>
+
+                                            <div class="image-holder <?php echo $productDesktopImage['name']; ?>"></div>
+
                                             <p class="img-caption">
                                                 <?php echo $productDesktopImage['caption']; ?>
                                                 <span class="counter">
-                                                    <?php if ( isset ( $productImagesDesktop ) ){echo $count . '/' . count($productImagesDesktop);} ?>
+                                                    <?php if ( isset ( $productImagesDesktop ) ){echo $count+1 . '/' . count($productImagesDesktop);} ?>
                                                 </span>
                                             </p>
                                         </div>

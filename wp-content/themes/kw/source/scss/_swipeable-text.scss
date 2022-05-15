@@ -1,3 +1,10 @@
+.swipaple-text-wrap {
+  @include breakpoint('mobile') {
+    height: calc(100vh - 7rem);
+    padding-top: 1.5rem;
+  }
+}
+
 .swipeable-text {
   display: flex;
   flex-direction: column;
@@ -43,6 +50,10 @@
     width: 30%;
     margin-right: 2em;
     margin-bottom: 1.5rem;
+
+    @include breakpoint('mobile') {
+      margin-right: 0;
+    }
   }
 }
 

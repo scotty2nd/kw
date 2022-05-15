@@ -23,6 +23,10 @@
     display: block;
     position: relative;
     height: 100%;
+    @include breakpoint('mobile', 'max') {
+      margin-left: .8rem;
+      margin-right: .8rem;
+    }
   }
 
   .item-wrap {
@@ -71,7 +75,7 @@
   .slick-arrow {
     @include breakpoint('mobile', 'max') {
       top: 50%;
-      margin-top: -44px;
+      margin-top: -22px;
     }
   }
 }

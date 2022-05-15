@@ -93,6 +93,24 @@
   .product-information {
     text-align: center;
   }
+
+  .slick-arrow {
+    @include breakpoint('mobile', 'max') {
+      top: calc(50% - 38px);
+    }
+  }
+
+  .slick-next {
+    @include breakpoint('mobile', 'max') {
+      right: -1.1rem;
+    }
+  }
+
+  .slick-prev {
+    @include breakpoint('mobile', 'max') {
+      left: -1.1rem;
+    }
+  }
 }
 
 .collection-slider.slick-slider, .slick-list, .slick-track {
