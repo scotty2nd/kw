@@ -82,6 +82,7 @@ $the_query = new WP_Query( array(
             $collections  = get_the_terms( $post->ID, 'kollektion' );
 
             if($collections) :
+                $iterator = 0;
                 foreach ( $collections as $collection ) : ?>
                     <?php
                         $productImagesDesktop = get_field('product_images_desktop');
@@ -92,12 +93,25 @@ $the_query = new WP_Query( array(
 
                     <?php if($collection->slug === $taxonomySlug) : ?>
                         <div>
-                            <picture>
-                                <source media="(min-width: 1024px)" srcset="<?php echo $productImagesDesktop[0]['sizes']['large']; ?>">
-                                <source media="(min-width: 768px)" srcset="<?php echo $productImagesTablet[0]['sizes']['large']; ?>">
-                                <source media="(min-width: 320px)" srcset="<?php echo $productImagesMobile[0]['sizes']['large']; ?>">
-                                <img class="img-item" src="<?php echo $productImagesDesktop[0]['sizes']['large']; ?>">
-                            </picture>
+                            <style type="text/css">
+
+                                .image-holder-products.<?php echo $productImagesDesktop[0]['name']; ?> {
+                                    background-image: url('<?php echo $productImagesMobile[$iterator]['sizes']['large']; ?>');
+                                }
+
+                                @media only screen and (min-width: 768px) {
+                                    .image-holder-products.<?php echo $productImagesDesktop[0]['name']; ?> {
+                                        background-image: url('<?php echo $productImagesTablet[$iterator]['sizes']['large']; ?>');
+                                    }
+                                }
+
+                                @media only screen and (min-width: 1024px) {
+                                    .image-holder-products.<?php echo $productImagesDesktop[0]['name']; ?> {
+                                        background-image: url('<?php echo $productImagesDesktop[$iterator]['sizes']['large']; ?>');
+                                    }
+                                }
+                            </style>
+                            <div class="image-holder-products <?php echo $productImagesDesktop[0]['name']; ?>"></div>
 
                             <span class="product-title">
                                 <?php echo the_title(); ?>
@@ -160,7 +174,7 @@ $the_query = new WP_Query( array(
                         <?php $index++; ?>
                         <?php break; ?>
                     <?php endif; ?>
-
+                    <?php $iterator++; ?>
                 <?php endforeach; ?>
             <?php endif; ?>
         <?php endwhile; ?>

@@ -43,15 +43,16 @@
       display: inline-block;
     }
 
-    @include breakpoint('tablet') {
-      top: 28px;
+    @include breakpoint('mobile', 'max') {
+      top: 25px;
+    }
 
+    @include breakpoint('tablet') {
       &.open {
         max-height: 1000px;
         transition: max-height 0.25s ease-in;
       }
     }
-
   }
 
   .flex-wrap {
@@ -64,22 +65,31 @@
     display: inline-block;
     cursor: pointer;
     max-width: 40px;
-
-    @include breakpoint('desktop', 'min') {
-      max-width: 60px;
-    }
-
-
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
     transition: all .3s ease;
 
+    @include breakpoint('desktop', 'min') {
+      max-width: 60px;
+    }
+
     > a {
       display: block;
       &:hover {
         transform: skewX(-5deg);
+      }
+    }
+
+    svg {
+      width: 8.4vw;
+      height: auto;
+      max-width: 60px;
+      display: block;
+
+      @include breakpoint('desktop', 'min') {
+        width: 4.4vw;
       }
     }
   }
@@ -158,7 +168,7 @@
 .burger-icon {
   display: none;
 
-  @include breakpoint('mobile') {
+  @include breakpoint('tablet') {
     display: inline-block;
     cursor: pointer;
     margin-right: 10px;
@@ -168,7 +178,7 @@
 }
 
 .stripe {
-  @include breakpoint('mobile') {
+  @include breakpoint('tablet') {
     width: 13px;
     height: 1px;
     background-color: #333;
@@ -179,19 +189,19 @@
 }
 
 .change .stripe.one {
-  @include breakpoint('mobile') {
+  @include breakpoint('tablet') {
     transform: rotate(-45deg) translate(-4px,2px);
   }
 }
 
 .change .stripe.two {
-  @include breakpoint('mobile') {
+  @include breakpoint('tablet') {
     opacity: 0;
   }
 }
 
 .change .stripe.three {
-  @include breakpoint('mobile') {
+  @include breakpoint('tablet') {
     transform: rotate(45deg) translate(-5px,-3px);
   }
 }

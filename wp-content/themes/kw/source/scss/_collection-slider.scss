@@ -9,7 +9,7 @@
   font-family: $font-family-italic;
 
 
-  @include breakpoint('desktop', 'min') {
+  @include breakpoint('tablet', 'min') {
     top: 42px;
   }
 }
@@ -30,6 +30,26 @@
 }
 
 .collection-slider {
+  .image-holder-products {
+    height: calc(100% - 84.8px - 29.8px);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+    max-width: 766px;
+    margin: 0 auto;
+
+    @include breakpoint('tablet', 'max') {
+      margin-right: 2.5rem;
+      margin-left: 2.5rem;
+    }
+
+    @include breakpoint('mobile', 'max') {
+      height: calc(100% - 5rem);
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
   .show-product-gallery {
     position: relative;
     display: block;
@@ -97,18 +117,6 @@
   .slick-arrow {
     @include breakpoint('mobile', 'max') {
       top: calc(50% - 38px);
-    }
-  }
-
-  .slick-next {
-    @include breakpoint('mobile', 'max') {
-      right: -1.1rem;
-    }
-  }
-
-  .slick-prev {
-    @include breakpoint('mobile', 'max') {
-      left: -1.1rem;
     }
   }
 }

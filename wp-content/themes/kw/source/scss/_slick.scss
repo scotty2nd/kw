@@ -139,8 +139,12 @@
     }
 
     &.slick-prev {
-        left: -25px;
+        left: 15px;
         transform: translateY(-50%) rotate(180deg);
+
+        @include breakpoint('tablet', 'max') {
+            left: -25px;
+        }
 
         @include breakpoint('mobile') {
             left: -1.6rem
@@ -148,7 +152,11 @@
     }
 
     &.slick-next {
-        right: -25px;
+        right: 15px;
+
+        @include breakpoint('tablet', 'max') {
+            right: -25px;
+        }
 
         @include breakpoint('mobile') {
             right: -1.6rem

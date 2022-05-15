@@ -23,7 +23,8 @@ jQuery( document ).ready(function(){
 
     var collectionSliderNew = jQuery( '.js-collection-slider-new' );
 
-    if(window.innerWidth <= 1023) {
+
+    if(window.innerWidth < 1024) {
         jQuery( '.js-collection-slider-new' ).on('init reInit afterChange', function(event, slick, currentSlide){
             //currentSlide is undefined on init
             var currentSlide = (currentSlide ? currentSlide : 0) + 1,
@@ -41,7 +42,7 @@ jQuery( document ).ready(function(){
         dots: true,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1023,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
@@ -124,30 +125,40 @@ jQuery( document ).ready(function(){
     });
 
     var slider = document.querySelector('.swipeable-text'),
+        swipableText = document.querySelector('.swipeable-text'),
+        swipapleTextwrap = document.querySelector('.swipaple-text-wrap'),
         isDown = false,
         startX,
         scrollLeft;
 
-    slider.addEventListener('mousedown', function(e){
-        isDown = true;
-        slider.classList.add('active');
-        startX = e.pageX - slider.offsetLeft;
-        scrollLeft = slider.scrollLeft;
-    });
-    slider.addEventListener('mouseleave', function() {
-        isDown = false;
-        slider.classList.remove('active');
-    });
-    slider.addEventListener('mouseup', function() {
-        isDown = false;
-        slider.classList.remove('active');
-    });
-    slider.addEventListener('mousemove', function(e) {
-        if(!isDown) return;
-        e.preventDefault();
-        var x = e.pageX - slider.offsetLeft,
-            walk = (x - startX) * 3; //scroll-fast
-        slider.scrollLeft = scrollLeft - walk;
-        document.querySelector('.handswipe').style.display = 'none';
-    });
+    if(swipapleTextwrap) {
+        if(swipableText.scrollWidth > swipapleTextwrap.clientWidth){
+            document.querySelector('.swipe').style.display = 'block';
+        }
+
+        slider.addEventListener('mousedown', function(e){
+            isDown = true;
+            slider.classList.add('active');
+            startX = e.pageX - slider.offsetLeft;
+            scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', function() {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mouseup', function() {
+            isDown = false;
+            slider.classList.remove('active');
+        });
+        slider.addEventListener('mousemove', function(e) {
+            if(!isDown) return;
+            e.preventDefault();
+            var x = e.pageX - slider.offsetLeft,
+                walk = (x - startX) * 3; //scroll-fast
+            slider.scrollLeft = scrollLeft - walk;
+            if(document.querySelector('.handswipe')){
+                document.querySelector('.handswipe').style.display = 'none';
+            }
+        });
+    }
 });

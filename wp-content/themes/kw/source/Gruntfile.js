@@ -39,5 +39,5 @@ module.exports = function (grunt) {
         }
     });
     grunt.registerTask('build', ['sass', 'cssmin', 'uglify']);
-    grunt.registerTask('dev', ['sass', 'cssmin', 'uglify', 'watch']);
+    grunt.registerTask('dev', ['sass', 'cssmin', 'watch']);
 };

@@ -60,6 +60,7 @@
       max-width: 617px;
       margin: 0 auto;
       text-align: left;
+      position: relative;
     }
   }
 }
@@ -74,20 +75,6 @@ button.mfp-close {
   color: #000;
   opacity: 1;
   z-index: 1050;
-
-
-  &:active {
-
-    @include breakpoint('mobile') {
-      top: 25px;
-      right: 2rem;
-    }
-  }
-
-  @include breakpoint('mobile') {
-    top: 25px;
-    right: 2rem;
-  }
 }
 
 /* overlay at start */

@@ -1,7 +1,6 @@
 .swipaple-text-wrap {
   @include breakpoint('mobile') {
     height: calc(100vh - 7rem);
-    padding-top: 1.5rem;
   }
 }
 
@@ -15,6 +14,17 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
   position: relative;
+  margin-right: 30px;
+
+  @include breakpoint('tablet' , 'max') {
+    margin-right: 0;
+    align-content: flex-start;
+    height: 70vh;
+  }
+
+  @include breakpoint('mobile' , 'max') {
+    height: 100%;
+  }
 
   &.active {
     cursor: grabbing;
@@ -51,6 +61,11 @@
     margin-right: 2em;
     margin-bottom: 1.5rem;
 
+    &:only-child {
+      width: 100%;
+      margin-right: 0;
+    }
+
     @include breakpoint('mobile') {
       margin-right: 0;
     }
@@ -63,10 +78,11 @@
 
 .swipe {
   position: absolute;
-  right: -25px;
+  right: -5px;
   top: calc(50% - 40px);
   width: 60px;
-  transform: translateY(-50%) translateX(100%) rotate(180deg);
+  transform: translateY(-50%) translateX(50%) rotate(180deg);
+  display: none;
 }
 
 @media (max-width:768px) {
