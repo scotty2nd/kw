@@ -34,6 +34,29 @@ jQuery( document ).ready(function(){
         });
     }
 
+    if(window.innerWidth >= 1024 && window.innerWidth <= 1080) {
+        jQuery( '.js-collection-slider-new' ).on('init reInit afterChange', function(event){
+            //currentSlide is undefined on init
+            var collectionName = '',
+                activeNames = '';
+
+            jQuery( '.slick-active', this ).each(function(){
+                collectionName = jQuery( 'figcaption p', this ).text();
+                activeNames += '<li><span class="title">' + collectionName + '</span></li>'
+            });
+
+            jQuery( '.slick-dots', this ).html(activeNames);
+
+            //jQuery( '.slick-dots' ).html( '<li><span class="title">' + collectionName + '</span></li>');
+            /*var currentSlide = (currentSlide ? currentSlide : 0) + 1,
+                currentTitle = collectionSliderNew.find( '.slick-current figcaption p' ).text();*/
+
+            //console.log(currentSlide);
+            //console.log(currentTitle);
+
+            //jQuery( '.slick-dots' ).html( '<li><span class="title">' + currentTitle + '</span></li>');
+        });
+    }
     collectionSliderNew.slick({
         mobileFirst: true,
         arrows: true,
@@ -42,11 +65,19 @@ jQuery( document ).ready(function(){
         dots: true,
         responsive: [
             {
-                breakpoint: 1023,
+                breakpoint: 1080,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
                     dots: false
+                }
+            },
+            {
+                breakpoint: 1023,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    dots: true
                 }
             },
             {
