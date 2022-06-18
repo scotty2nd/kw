@@ -3,6 +3,10 @@
   padding-right: 30px;
   padding-left: 30px;
 
+  @include breakpoint('tablet', 'min') {
+    height: 87vh;
+  }
+
   @include breakpoint('desktop', 'min') {
     height: 75vh;
   }
@@ -14,8 +18,8 @@
 
   @include breakpoint('mobile', 'max') {
     height: calc(100vh - 7rem);
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 
   a {
@@ -54,25 +58,51 @@
   .slick-arrow {
     top: calc(50% - 23px);
 
+    @include breakpoint('tablet', 'min') {
+      top: calc(50% - 35px);
+    }
+
+    @include breakpoint('desktop', 'min') {
+      top: calc(50% - 23px);
+    }
+
     &.slick-prev {
-      @include breakpoint('tablet', 'max') {
-        left: -25px;
+      @include breakpoint('mobile', 'max') {
+        left: -22px;
+      }
+
+      @include breakpoint('tablet', 'min') {
+        left: -31px;
       }
 
       @include breakpoint('desktop', 'min') {
         top: 50%;
         transform: translate(-82%, -50%) rotate(180deg);
+        left: -22px;
+      }
+
+      @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) and (orientation:landscape) {
+        left: 22px;
       }
     }
 
     &.slick-next {
-      @include breakpoint('tablet', 'max') {
-        right: -25px;
+      @include breakpoint('tablet', 'min') {
+        right: -31px;
+      }
+
+      @include breakpoint('mobile', 'max') {
+        right: -22px;
       }
 
       @include breakpoint('desktop', 'min') {
         top: 50%;
         transform: translate(82%, -50%);
+        right: -22px;
+      }
+
+      @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) and (orientation:landscape) {
+        right: 22px;
       }
     }
   }
@@ -82,6 +112,14 @@
     list-style: none;
     padding: 0;
     text-align: center;
+
+    @include breakpoint('tablet', 'min') {
+      margin-top: 2rem;
+    }
+
+    @include breakpoint('desktop', 'min') {
+      margin-top: 1.5rem;
+    }
 
     .title {
       font-family: $font-family-italic;

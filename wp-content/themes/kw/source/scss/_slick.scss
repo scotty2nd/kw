@@ -146,6 +146,14 @@
             left: -25px;
         }
 
+        @include breakpoint('tablet', 'min') {
+            left: -31px;
+        }
+
+        @include breakpoint('desktop', 'min') {
+            left: -25px;
+        }
+
         @include breakpoint('mobile') {
             left: -1.6rem
         }
@@ -155,6 +163,14 @@
         right: 15px;
 
         @include breakpoint('tablet', 'max') {
+            right: -25px;
+        }
+
+        @include breakpoint('tablet', 'min') {
+            right: -31px;
+        }
+
+        @include breakpoint('desktop', 'min') {
             right: -25px;
         }
 

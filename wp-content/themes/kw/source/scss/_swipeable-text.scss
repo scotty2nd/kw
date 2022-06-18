@@ -1,6 +1,19 @@
 .swipaple-text-wrap {
   @include breakpoint('mobile') {
     height: calc(100vh - 7rem);
+    padding-top: 22px;
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  @include breakpoint('tablet' , 'min') {
+    padding-top: 50px;
+    //padding-left: 14px;
+    //padding-right: 14px;
+  }
+
+  @include breakpoint('desktop' , 'min') {
+    padding-top: 0;
   }
 }
 
@@ -24,6 +37,18 @@
 
   @include breakpoint('mobile' , 'max') {
     height: 100%;
+  }
+
+  @include breakpoint('tablet' , 'min') {
+    height: 87vh;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  @include breakpoint('desktop' , 'min') {
+    height: 75vh;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   &.active {

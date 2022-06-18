@@ -50,6 +50,14 @@
           padding-bottom: calc(100vh - 125px);
           margin-top: 66px;
         }
+
+        @include breakpoint('tablet', 'min') {
+          padding-bottom: 82vh;
+        }
+
+        @include breakpoint('desktop', 'min') {
+          padding-bottom: 75vh;
+        }
       }
 
       img {
@@ -124,7 +132,7 @@
     &.mfp-arrow-left {
       left: -2px;
 
-      @include breakpoint('desktop', 'min') {
+      @include breakpoint('tablet', 'min') {
         left: 0;
       }
 
@@ -135,7 +143,7 @@
     &.mfp-arrow-right {
       right: -2px;
 
-      @include breakpoint('desktop', 'min') {
+      @include breakpoint('tablet', 'min') {
         right: 0;
       }
     }

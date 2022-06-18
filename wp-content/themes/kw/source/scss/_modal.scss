@@ -55,9 +55,17 @@
       position: relative;
     }
 
+    @include breakpoint('tablet', 'min') {
+      padding: calc(20px + 2.5rem);
+    }
+
+    @include breakpoint('desktop', 'min') {
+      padding: 6rem;
+    }
+
     .product-information-text {
       height: 100%;
-      max-width: 617px;
+      max-width: 626px;
       margin: 0 auto;
       text-align: left;
       position: relative;

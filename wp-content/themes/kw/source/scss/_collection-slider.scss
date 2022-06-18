@@ -19,8 +19,14 @@
   height: 70vh;
   padding-top: 3rem;
 
+  @include breakpoint('tablet', 'min') {
+    height: 87vh;
+    padding-top: .5rem;
+  }
+
   @include breakpoint('desktop', 'min') {
     height: 75vh;
+    padding-top: 3rem;
   }
 
   @include breakpoint('mobile', 'max') {
@@ -42,6 +48,14 @@
     @include breakpoint('tablet', 'max') {
       margin-right: 2.5rem;
       margin-left: 2.5rem;
+    }
+
+    @include breakpoint('tablet', 'min') {
+      margin-top: 1.8rem;
+    }
+
+    @include breakpoint('desktop', 'min') {
+      margin-top: 0;
     }
 
     @include breakpoint('mobile', 'max') {
@@ -107,6 +121,14 @@
 
     @include breakpoint('mobile', 'max') {
       padding-top: 2rem;
+    }
+
+    @include breakpoint('tablet', 'min') {
+      padding-top: 2.2rem;
+    }
+
+    @include breakpoint('desktop', 'min') {
+      padding-top: 4rem;
     }
   }
 

@@ -8,6 +8,14 @@
     margin-bottom: 2rem;
   }
 
+  @include breakpoint('tablet', 'min') {
+    margin-bottom: 3.5rem;
+  }
+
+  @include breakpoint('desktop', 'min') {
+    margin-bottom: 2.5rem;
+  }
+
   .menu-wrap {
     position: relative;
     display: inline-block;
@@ -47,7 +55,7 @@
       top: 25px;
     }
 
-    @include breakpoint('tablet') {
+    @include breakpoint('desktop') {
       &.open {
         max-height: 1000px;
         transition: max-height 0.25s ease-in;
@@ -83,10 +91,14 @@
     }
 
     svg {
-      width: 8.4vw;
+      width: 13vw;
       height: auto;
       max-width: 60px;
       display: block;
+
+      @include breakpoint('tablet', 'min') {
+        width: 7vw;
+      }
 
       @include breakpoint('desktop', 'min') {
         width: 4.4vw;
@@ -168,17 +180,26 @@
 .burger-icon {
   display: none;
 
-  @include breakpoint('tablet') {
+  @include breakpoint('desktop') {
     display: inline-block;
     cursor: pointer;
     margin-right: 10px;
     margin-top: 1px;
     margin-left: -20px;
   }
+
+  @include breakpoint('tablet', 'min') {
+    margin-right: 10px;
+    margin-left: -39px;
+  }
+
+  @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) and (orientation:landscape) {
+    display: block;
+  }
 }
 
 .stripe {
-  @include breakpoint('tablet') {
+  @include breakpoint('desktop') {
     width: 13px;
     height: 1px;
     background-color: #333;
@@ -186,22 +207,31 @@
     transition: 0.4s;
     border-radius: 3px;
   }
+
+  @include breakpoint('tablet', 'min') {
+    width: 18px;
+    margin: 7px 0;
+  }
 }
 
 .change .stripe.one {
-  @include breakpoint('tablet') {
+  @include breakpoint('desktop') {
     transform: rotate(-45deg) translate(-4px,2px);
+  }
+
+  @include breakpoint('tablet', 'min') {
+    transform: rotate(-45deg) translate(-8px,6px);
   }
 }
 
 .change .stripe.two {
-  @include breakpoint('tablet') {
+  @include breakpoint('desktop') {
     opacity: 0;
   }
 }
 
 .change .stripe.three {
-  @include breakpoint('tablet') {
+  @include breakpoint('desktop') {
     transform: rotate(45deg) translate(-5px,-3px);
   }
 }
